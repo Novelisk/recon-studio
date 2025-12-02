@@ -1,13 +1,80 @@
 .header {
   margin-top: 12px;
+  position: sticky;
+  margin-left: 50px;
   display: flex;
-  justify-content: space-between;
-  align-content: flex-start;
   height: 52px;
   max-width: 100%;
+  z-index: 100;
 }
 
 .header__logo {
   width: 154px;
   height: 52px;
+}
+
+.header__nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+  margin: 0;
+}
+
+.header__nav-list_left,
+.header__nav-list_right {
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  list-style: none;
+  width: auto;
+  height: 27px;
+}
+
+.header__nav-list_left {
+  margin-left: 105px;
+}
+
+.header__nav-list_left-item {
+  padding-right: 40px;
+  text-decoration: none;
+  list-style: none;
+  font-size: 18px;
+  line-height: auto;
+  color: #b5b5b5;
+}
+
+.header__nav-list_left-item:last-child {
+  padding: 0;
+}
+
+.header__nav-list_right {
+  margin-right: 50px;
+  margin-left: auto;
+}
+
+.header__nav-list_right-item {
+  font-size: 18px;
+  line-height: auto;
+  color: #b5b5b5;
+  text-decoration: underline;
+}
+
+.header__nav-list_item_bold {
+  font-weight: 800;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.header__nav-list_item-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.header__nav-list_item_span {
+  width: 36px;
+  height: 2px;
+  background-color: #cfabb2;
 }

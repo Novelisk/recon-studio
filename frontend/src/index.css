@@ -1,4 +1,7 @@
+@import url('../node_modules/normalize.css/normalize.css');
 @import url('./components/Header/Header.css');
+@import url('./components/Footer/Footer.css');
+@import url('./pages/NotFound/NotFound.css');
 
 body {
   margin: 0 auto;
@@ -15,4 +18,14 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+hr {
+  margin: 0;
+  color: #b5b5b5;
 }

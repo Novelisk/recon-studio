@@ -1,20 +1,29 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import { Header } from './components/Header/Header';
 import { NotFound } from './pages/NotFound/NotFound';
-
-// Añadir element al Route después del path
+import { Footer } from './components/Footer/Footer';
 
 function App() {
+  const location = useLocation();
+
+  const hideHeaderOn = ['/404'];
+
+  const hideHeader = hideHeaderOn.includes(location.pathname);
+
   return (
     <>
-      <Header />
+      {!hideHeader && <Header />}
 
       <Routes>
         {/* <Route path="/" /> */}
 
-        <Route path="*" element={<NotFound />} />
+        <Route path="/404" element={<NotFound />} />
+        <Route path="*" element={<Navigate to="/404" replace />} />
       </Routes>
+
+      {/* {!hideHeader && <Footer />} */}
+      <Footer />
     </>
   );
 }
