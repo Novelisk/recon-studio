@@ -1,0 +1,19 @@
+.home {
+  margin: 0 auto;
+  height: 1024px;
+}
+
+.home__top-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b5b5b5;
+  z-index: 1;
+}
+
+.home__top-container_title {
+  font-size: 84;
+  font-weight: 900;
+  line-height: 110%;
+  color: white;
+}

@@ -9,7 +9,7 @@ export const Footer = () => {
   return (
     <>
       <hr />
-      <div className="footer">
+      <footer className="footer">
         <div className="footer__contact">
           <div className="footer__contact-container">
             <img
@@ -67,7 +67,7 @@ export const Footer = () => {
         <div className="footer__copyright">
           Copyright &copy; 2025 Rec-On Studio. Todos los derechos resevados.
         </div>
-      </div>
+      </footer>
     </>
   );
 };
