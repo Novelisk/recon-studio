@@ -65,11 +65,7 @@ export const AlbumSlider = () => {
 
   const scrollByCard = (direction) => {
     if (!sliderRef.current || !cardRef.current) return;
-
-    // Obtenemos tamaño real de la tarjeta (incluye padding)
     const cardWidth = cardRef.current.offsetWidth;
-
-    // Obtenemos el gap desde el CSS del container
     const styles = window.getComputedStyle(sliderRef.current);
     const gap = parseInt(styles.gap) || 0;
 
@@ -83,19 +79,6 @@ export const AlbumSlider = () => {
 
   const scrollRight = () => scrollByCard(1);
   const scrollLeft = () => scrollByCard(-1);
-
-  // const scrollRight = () => {
-  //   sliderRef.current.scrollBy({
-  //     left: 320,
-  //     behavior: 'smooth',
-  //   });
-  // };
-
-  // const scrollLeft = () => {
-  //   sliderRef.current.scrollBy({
-  //     left: -320,
-  //     behavior: 'smooth',
-  //   });
 
   return (
     <div className="albums">
