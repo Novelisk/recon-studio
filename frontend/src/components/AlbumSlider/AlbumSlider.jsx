@@ -1,62 +1,125 @@
-import React from 'react';
+import React, { useRef } from 'react';
 
 const albumList = [
   {
     id: 1,
-    title: 'Album 1 title',
-    artist: 'Artist 1',
-    image: '',
+    title: 'Dark Side Of The Moon',
+    artist: 'Pink Floyd',
+    image: 'https://i.scdn.co/image/ab67616d0000b273db216ca805faf5fe35df4ee6',
   },
   {
     id: 2,
-    title: 'Album 2 title',
-    artist: 'Artist 2',
-    image: '',
+    title: 'Nirvana',
+    artist: 'Nevermind',
+    image:
+      'https://m.media-amazon.com/images/I/61ZhsEYnSdL._UF1000,1000_QL80_.jpg',
   },
   {
     id: 3,
-    title: 'Album 3 title',
-    artist: 'Artist 3',
-    image: '',
+    title: 'Metallica',
+    artist: 'The Black Album',
+    image:
+      'https://www.excelsior.com.mx/800x600/filters:format(webp):quality(75)/media/pictures/2016/08/11/1500102.jpg',
   },
   {
     id: 4,
     title: 'Album 4 title',
     artist: 'Artist 4',
-    image: '',
+    image: null,
   },
   {
     id: 5,
     title: 'Album 5 title',
     artist: 'Artist 5',
-    image: '',
+    image: null,
   },
   {
     id: 6,
     title: 'Album 6 title',
     artist: 'Artist 6',
-    image: '',
+    image: null,
   },
   {
     id: 7,
     title: 'Album 7 title',
     artist: 'Artist 7',
-    image: '',
+    image: null,
   },
   {
     id: 8,
     title: 'Album 8 title',
     artist: 'Artist 8',
-    image: '',
+    image: null,
   },
   {
     id: 9,
     title: 'Album 9 title',
     artist: 'Artist 9',
-    image: '',
+    image: null,
   },
 ];
 
 export const AlbumSlider = () => {
-  return <div>AlbumSlider</div>;
+  const sliderRef = useRef(null);
+  const cardRef = useRef(null);
+
+  const scrollByCard = (direction) => {
+    if (!sliderRef.current || !cardRef.current) return;
+
+    // Obtenemos tamaño real de la tarjeta (incluye padding)
+    const cardWidth = cardRef.current.offsetWidth;
+
+    // Obtenemos el gap desde el CSS del container
+    const styles = window.getComputedStyle(sliderRef.current);
+    const gap = parseInt(styles.gap) || 0;
+
+    const totalSlide = cardWidth + gap;
+
+    sliderRef.current.scrollBy({
+      left: direction * totalSlide,
+      behavior: 'smooth',
+    });
+  };
+
+  const scrollRight = () => scrollByCard(1);
+  const scrollLeft = () => scrollByCard(-1);
+
+  // const scrollRight = () => {
+  //   sliderRef.current.scrollBy({
+  //     left: 320,
+  //     behavior: 'smooth',
+  //   });
+  // };
+
+  // const scrollLeft = () => {
+  //   sliderRef.current.scrollBy({
+  //     left: -320,
+  //     behavior: 'smooth',
+  //   });
+
+  return (
+    <div className="albums">
+      <button type="button" className="albums__btn-left" onClick={scrollLeft}>
+        «
+      </button>
+
+      <div className="albums__container" ref={sliderRef}>
+        {albumList.map((album, index) => (
+          <div
+            key={album.id}
+            className="album"
+            ref={index === 0 ? cardRef : null}
+          >
+            <img className="album__image" src={album.image} alt={album.title} />
+            <h3 className="album__title">{album.title}</h3>
+            <p className="album__artist">{album.artist}</p>
+          </div>
+        ))}
+      </div>
+
+      <button type="button" className="albums__btn-right" onClick={scrollRight}>
+        »
+      </button>
+    </div>
+  );
 };

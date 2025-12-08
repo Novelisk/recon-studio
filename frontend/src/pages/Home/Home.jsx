@@ -1,4 +1,5 @@
 import React from 'react';
+import { AlbumSlider } from '../../components/AlbumSlider/AlbumSlider';
 
 export const Home = () => {
   return (
@@ -20,6 +21,8 @@ export const Home = () => {
           </p>
           <div className="home__middle-container_albums"></div>
         </div>
+
+        <AlbumSlider />
       </div>
     </section>
   );

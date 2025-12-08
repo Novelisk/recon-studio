@@ -1,9 +1,10 @@
 .home {
   margin: 0 auto;
-  max-height: 1024px;
+  width: 100%;
 }
 
 .home__top-container {
+  /* height: 100vh; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,4 +17,32 @@
   line-height: 110%;
   color: white;
   margin: 345px auto 337px 309px;
+}
+
+.home__middle-container {
+  margin: 104px auto 178px;
+  height: fit-content;
+  display: flex;
+}
+
+.home__middle-container_header {
+  margin: 140px 20px 135px 310px;
+  width: 310px;
+  height: 352px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home__middle-container_header-title {
+  color: white;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: auto;
+}
+
+.home__middle-container_header-description {
+  color: #b5b5b5;
+  font-size: 16px;
+  line-height: auto;
 }
