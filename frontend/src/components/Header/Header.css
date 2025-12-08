@@ -1,12 +1,13 @@
 .header {
-  margin-top: 12px;
-  margin-bottom: 12px;
-  position: sticky;
-  margin-left: 50px;
+  position: fixed;
+  top: 12px;
+  left: 0;
+  right: 0;
+  padding-left: 50px;
   display: flex;
   height: 52px;
-  max-width: 100%;
-  z-index: 100;
+  z-index: 1000;
+  background-color: #181518;
 }
 
 .header__logo {
@@ -18,6 +19,7 @@
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   align-content: space-between;
   margin: 0;
 }

@@ -1,8 +1,15 @@
 import React from 'react';
-import vynil from '../../assets/images/Image_Vinyl.png';
+import vinyl from '../../assets/images/Image_Vinyl.png';
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 export const NotFound = () => {
+  const navigate = useNavigate();
+
+  const handleToHome = () => {
+    navigate('/home');
+  };
+
   return (
     <div className="not-found">
       <h2 className="not-found__title">Error, Page Not Found</h2>
@@ -10,7 +17,7 @@ export const NotFound = () => {
         4
         <img
           className="not-found__text-image"
-          src={vynil}
+          src={vinyl}
           alt="Image of a vynil record"
         />
         4
@@ -22,9 +29,9 @@ export const NotFound = () => {
       <button
         type="button"
         className="not-found__button"
-        onClick={() => <Link to="/home" />}
+        onClick={handleToHome}
       >
-        Volver al incio
+        Volver al inicio
       </button>
     </div>
   );

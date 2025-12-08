@@ -25,7 +25,6 @@ function App() {
       </Routes>
 
       {!hideHeader && <Footer />}
-      {/* <Footer /> */}
     </>
   );
 }
