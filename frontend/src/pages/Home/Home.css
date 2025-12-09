@@ -1,10 +1,11 @@
 .home {
   margin: 0 auto;
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .home__top-container {
-  /* height: 100vh; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,13 +21,20 @@
 }
 
 .home__middle-container {
-  margin: 104px auto 178px;
+  margin-right: 300px;
+  position: relative;
+  margin: 104px auto;
   height: fit-content;
   display: flex;
+  align-items: center;
+  background-image: url('https://i.ibb.co/nNRW1LQs/soundwave-img.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: calc(100% + 50px) center;
 }
 
 .home__middle-container_header {
-  margin: 140px 20px 135px 310px;
+  margin-right: 20px;
   width: 310px;
   height: 352px;
   display: flex;
@@ -35,13 +43,15 @@
 }
 
 .home__middle-container_header-title {
+  margin: 0;
   color: white;
   font-size: 48px;
-  font-weight: 900;
+  font-weight: 800;
   line-height: auto;
 }
 
 .home__middle-container_header-description {
+  margin: 14px 0 0 0;
   color: #b5b5b5;
   font-size: 16px;
   line-height: auto;

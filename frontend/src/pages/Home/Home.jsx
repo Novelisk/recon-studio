@@ -14,14 +14,12 @@ export const Home = () => {
       <div className="home__middle-container">
         <div className="home__middle-container_header">
           <h2 className="home__middle-container_header-title">
-            Algo de lo que se ha grabado aquí.
+            Albums producidos en casa.
           </h2>
           <p className="home__middle-container_header-description">
             Algunos de los artistas que han confiado su producción a nosotros.
           </p>
-          <div className="home__middle-container_albums"></div>
         </div>
-
         <AlbumSlider />
       </div>
     </section>

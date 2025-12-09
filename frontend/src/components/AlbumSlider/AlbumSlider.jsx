@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import forwardButton from '../../assets/images/forward_btn_icon.png';
 
 const albumList = [
   {
