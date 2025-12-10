@@ -30,7 +30,7 @@
   background-image: url('https://i.ibb.co/nNRW1LQs/soundwave-img.png');
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: calc(100% + 50px) center;
+  background-position: center right;
 }
 
 .home__middle-container_header {

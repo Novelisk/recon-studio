@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
-import forwardButton from '../../assets/images/forward_btn_icon.png';
+import rightBtn from '../../assets/images/right_button_icon.png';
+import leftBtn from '../../assets/images/left_button_icon.png';
 
 const albumList = [
   {
@@ -83,8 +84,12 @@ export const AlbumSlider = () => {
 
   return (
     <div className="albums">
-      <button type="button" className="albums__btn-left" onClick={scrollLeft}>
-        «
+      <button type="button" className="albums__btn" onClick={scrollLeft}>
+        <img
+          className="albums__btn-left"
+          src={leftBtn}
+          alt="Left scroll button"
+        />
       </button>
 
       <div className="albums__container" ref={sliderRef}>
@@ -101,8 +106,12 @@ export const AlbumSlider = () => {
         ))}
       </div>
 
-      <button type="button" className="albums__btn-right" onClick={scrollRight}>
-        »
+      <button type="button" className="albums__btn" onClick={scrollRight}>
+        <img
+          className="albums__btn-right"
+          src={rightBtn}
+          alt="Right scroll button"
+        />
       </button>
     </div>
   );
