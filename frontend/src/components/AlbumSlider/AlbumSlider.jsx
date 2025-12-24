@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import { SocialsPopup } from '../SocialsPopup/SocialsPopup';
 import forwardButton from '../../assets/images/forward_btn_icon.png';
 
 const albumList = [
@@ -7,6 +8,12 @@ const albumList = [
     title: 'Dark Side Of The Moon',
     artist: 'Pink Floyd',
     image: 'https://i.scdn.co/image/ab67616d0000b273db216ca805faf5fe35df4ee6',
+    links: {
+      instagram: '#',
+      facebook: '#',
+      spotify: '#',
+      bandcamp: '#',
+    },
   },
   {
     id: 2,
@@ -14,6 +21,12 @@ const albumList = [
     artist: 'Nevermind',
     image:
       'https://m.media-amazon.com/images/I/61ZhsEYnSdL._UF1000,1000_QL80_.jpg',
+    links: {
+      instagram: '#',
+      facebook: '#',
+      spotify: '#',
+      bandcamp: '#',
+    },
   },
   {
     id: 3,
@@ -21,42 +34,84 @@ const albumList = [
     artist: 'The Black Album',
     image:
       'https://www.excelsior.com.mx/800x600/filters:format(webp):quality(75)/media/pictures/2016/08/11/1500102.jpg',
+    links: {
+      instagram: '#',
+      facebook: '#',
+      spotify: '#',
+      bandcamp: '#',
+    },
   },
   {
     id: 4,
     title: 'Album 4 title',
     artist: 'Artist 4',
     image: null,
+    links: {
+      instagram: null,
+      facebook: null,
+      spotify: null,
+      bandcamp: null,
+    },
   },
   {
     id: 5,
     title: 'Album 5 title',
     artist: 'Artist 5',
     image: null,
+    links: {
+      instagram: null,
+      facebook: null,
+      spotify: null,
+      bandcamp: null,
+    },
   },
   {
     id: 6,
     title: 'Album 6 title',
     artist: 'Artist 6',
     image: null,
+    links: {
+      instagram: null,
+      facebook: null,
+      spotify: null,
+      bandcamp: null,
+    },
   },
   {
     id: 7,
     title: 'Album 7 title',
     artist: 'Artist 7',
     image: null,
+    links: {
+      instagram: null,
+      facebook: null,
+      spotify: null,
+      bandcamp: null,
+    },
   },
   {
     id: 8,
     title: 'Album 8 title',
     artist: 'Artist 8',
     image: null,
+    links: {
+      instagram: null,
+      facebook: null,
+      spotify: null,
+      bandcamp: null,
+    },
   },
   {
     id: 9,
     title: 'Album 9 title',
     artist: 'Artist 9',
     image: null,
+    links: {
+      instagram: null,
+      facebook: null,
+      spotify: null,
+      bandcamp: null,
+    },
   },
 ];
 
@@ -97,6 +152,8 @@ export const AlbumSlider = () => {
             <img className="album__image" src={album.image} alt={album.title} />
             <h3 className="album__title">{album.title}</h3>
             <p className="album__artist">{album.artist}</p>
+
+            <SocialsPopup links={album.links} />
           </div>
         ))}
       </div>

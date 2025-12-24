@@ -1,0 +1,14 @@
+.social-popup {
+  position: absolute;
+  top: -16px;
+  right: 12px;
+  display: flex;
+  gap: 12px;
+  /* background: rgba(0, 0, 0, 0.7); */
+  padding: 8px 12px;
+  border-radius: 999px;
+  /* opacity: 0; */
+  transform: translateY(6px);
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25 ease;
+}

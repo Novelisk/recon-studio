@@ -4,6 +4,7 @@
 @import url('./pages/NotFound/NotFound.css');
 @import url('./pages/Home/Home.css');
 @import url('./components/AlbumSlider/AlbumSlider.css');
+@import url('./components//SocialsPopup/SocialsPopup.css');
 
 body {
   margin: 0 auto;
