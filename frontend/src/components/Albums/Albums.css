@@ -1,0 +1,36 @@
+.albums {
+  /* position: relative; */
+  margin: 104px auto 0;
+  /* height: fit-content; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  /* background-image: url('https://i.ibb.co/nNRW1LQs/soundwave-img.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center right; */
+}
+
+.albums__header {
+  width: 310px;
+  height: 352px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.albums__title {
+  margin: 0;
+  color: white;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.albums__description {
+  margin: 14px 0 0 0;
+  color: #b5b5b5;
+  font-size: 16px;
+  line-height: auto;
+}

@@ -1,0 +1,18 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b5b5b5;
+  background-image: url('https://images.stockcake.com/public/a/6/2/a621a2a5-72ab-407f-9e82-fbf0c5447677/music-studio-equipment-stockcake.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero__title {
+  font-size: 84;
+  font-weight: 900;
+  line-height: 110%;
+  color: white;
+  margin: 345px auto 337px 309px;
+}

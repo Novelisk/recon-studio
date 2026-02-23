@@ -1,0 +1,43 @@
+.features {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px 0;
+  margin-bottom: 130px;
+}
+
+.features__item {
+  width: 310px;
+  height: 327px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.features__item--equipment {
+  margin: 0;
+}
+
+.item__image {
+  width: 85px;
+  height: 85px;
+}
+
+.item__title {
+  margin: 20px 0 20px 0;
+  color: white;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: auto;
+  text-align: center;
+}
+
+.item__paragraph {
+  margin: 0;
+  color: #b5b5b5;
+  font-size: 16px;
+  line-height: auto;
+  text-align: center;
+}

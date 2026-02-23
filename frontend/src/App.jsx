@@ -1,9 +1,10 @@
 import React from 'react';
 import { Routes, Route, useLocation, Navigate } from 'react-router-dom';
-import { Header } from './components/Header/Header';
-import { NotFound } from './pages/NotFound/NotFound';
-import { Footer } from './components/Footer/Footer';
 import { Home } from './pages/Home/Home';
+import { NotFound } from './pages/NotFound/NotFound';
+
+import { Header } from './components/Header/Header';
+import { Footer } from './components/Footer/Footer';
 
 function App() {
   const location = useLocation();
@@ -19,6 +20,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
+
+        {/* <Route path='/about' element /> */}
 
         <Route path="/404" element={<NotFound />} />
         <Route path="*" element={<Navigate to="/404" replace />} />

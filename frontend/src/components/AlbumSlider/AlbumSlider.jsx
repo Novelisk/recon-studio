@@ -138,34 +138,38 @@ export const AlbumSlider = () => {
   const scrollLeft = () => scrollByCard(-1);
 
   return (
-    <div className="albums">
-      <button type="button" className="albums__btn" onClick={scrollLeft}>
+    <div className="album-slider">
+      <button type="button" className="album-slider__btn" onClick={scrollLeft}>
         <img
-          className="albums__btn-left"
+          className="album-slider__btn-left"
           src={leftBtn}
           alt="Left scroll button"
         />
       </button>
 
-      <div className="albums__container" ref={sliderRef}>
+      <div className="album-slider__container" ref={sliderRef}>
         {albumList.map((album, index) => (
           <div
             key={album.id}
             className="album"
             ref={index === 0 ? cardRef : null}
           >
-            <img className="album__image" src={album.image} alt={album.title} />
-            <h3 className="album__title">{album.title}</h3>
-            <p className="album__artist">{album.artist}</p>
+            <img
+              className="album-slider__image"
+              src={album.image}
+              alt={album.title}
+            />
+            <h3 className="album-slider__title">{album.title}</h3>
+            <p className="album-slider__artist">{album.artist}</p>
 
             <SocialsPopup links={album.links} />
           </div>
         ))}
       </div>
 
-      <button type="button" className="albums__btn" onClick={scrollRight}>
+      <button type="button" className="album-slider__btn" onClick={scrollRight}>
         <img
-          className="albums__btn-right"
+          className="album-slider__btn-right"
           src={rightBtn}
           alt="Right scroll button"
         />

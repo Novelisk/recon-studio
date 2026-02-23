@@ -8,7 +8,7 @@ import emailIcon from '../../assets/images/email_icon_white.svg';
 export const Footer = () => {
   return (
     <>
-      <hr />
+      <div className="line"></div>
       <footer className="footer">
         <div className="footer__contact">
           <div className="footer__contact-container">

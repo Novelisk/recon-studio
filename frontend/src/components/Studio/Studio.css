@@ -1,0 +1,110 @@
+.studio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 104px;
+  margin-bottom: 120px;
+}
+
+.studio__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.studio__title {
+  width: 800px;
+  margin: 0;
+  color: white;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: auto;
+}
+
+.studio_subtitle {
+  width: 800px;
+  margin: 14px 0 0 0;
+  color: #b5b5b5;
+  font-size: 20px;
+  line-height: auto;
+}
+
+.studio__feature {
+  display: flex;
+  align-items: center;
+  margin-top: 28px;
+}
+
+.studio__icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 14px;
+}
+
+.studio__text {
+  color: #b5b5b5;
+  font-size: 16px;
+  line-height: auto;
+}
+
+.studio__stats {
+  width: auto;
+  margin-top: 28px;
+  color: #b5b5b5;
+  font-size: 16px;
+  line-height: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.studio__stat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.studio__numbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 14px;
+}
+
+.studio__number {
+  color: white;
+  font-size: 48px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.studio__plus {
+  color: #cfabb2;
+  font-size: 32px;
+  font-weight: 800;
+  margin: 0 0 0 15px;
+}
+
+.studio__stat-text {
+  color: white;
+  font-size: 16px;
+  line-height: auto;
+  margin: 0;
+}
+
+.studio__line {
+  width: 1px;
+  height: 93px;
+  background-color: #b5b5b5;
+}
+
+.studio__image {
+  width: 640px;
+  height: 480px;
+  margin-left: 60px;
+
+  background-image: url('https://images.stockcake.com/public/a/2/a/a2a84eaf-f003-411d-867d-eac576306cce/studio-control-board-stockcake.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
