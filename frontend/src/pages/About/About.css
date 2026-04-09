@@ -1,0 +1,246 @@
+.about {
+  width: 100%;
+  /* height: 100dvh; */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .about-header {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  padding: 120px 80px 160px;
+  background-color: #181518;
+} */
+
+/* .about-header__title {
+  max-height: 400px;
+  font-size: 200px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.about-header__image {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  margin-top: -120px;
+  z-index: 1;
+} */
+
+.about-team,
+.about-studio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 310px 0 310px;
+  gap: 80px;
+}
+
+.about-team__header,
+.about-studio__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.about-team__title,
+.about-studio__title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.about-team__paragraph,
+.about-studio__paragraph {
+  font-size: 16px;
+  color: #b5b5b5;
+  text-align: center;
+}
+
+.about-team__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.about-team__member {
+  width: 310px;
+  height: 486px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.about-team__member-image {
+  width: 100%;
+  height: 310px;
+  background-size: cover;
+  background-position: center;
+}
+
+.about-team__member-name {
+  font-size: 32px;
+  font-weight: 700;
+  color: #cfab82;
+}
+
+.about-team__member-role {
+  font-size: 16px;
+  color: #b5b5b5;
+}
+
+.about-studio__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 80px;
+}
+
+.about-studio__card {
+  width: 620px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 80px;
+}
+
+.about-studio__grid-item {
+  cursor: pointer;
+  transition: transform 0.25s ease;
+}
+
+.about-studio__grid-item:hover {
+  transform: scale(1.03);
+}
+
+.about-studio__grid-image {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+
+.about-studio__grid-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+}
+
+.about-studio__subgrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+  height: 0;
+  overflow: hidden;
+}
+
+.about-studio__subgrid.open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+  height: auto;
+}
+
+.subgrid__subcard {
+  padding-bottom: 12px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.subcard__image {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+.subcard__image:hover {
+  transform: scale(1.05);
+  transition: transform 0.25s ease;
+}
+
+.subcard__title,
+.modal__title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin-top: 12px;
+}
+
+.subcard__description,
+.modal__description {
+  font-size: 14px;
+  color: #b5b5b5;
+  text-align: center;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 999;
+}
+
+.modal__content {
+  background-color: #181518;
+  padding: 38px;
+  border-radius: 16px;
+  max-width: 600px;
+  width: 90%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  animation: modalFadeIn 0.3s ease;
+}
+
+.modal__image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Key Frames for modal animation */
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

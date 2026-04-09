@@ -45,7 +45,7 @@ export const Studio = () => {
 
           <div className="studio__stat">
             <div className="studio__numbers">
-              <h3 className="studio__number">2</h3>
+              <h3 className="studio__number">2k</h3>
               <p className="studio__plus">+</p>
             </div>
             <p className="studio__stat-text">Tracks producidas</p>
