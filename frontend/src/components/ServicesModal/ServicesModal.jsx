@@ -33,36 +33,42 @@ const SERVICES = {
   },
 };
 
-export const Services = () => {
-  const [active, setActive] = React.useState('mastering');
+const ServicesModal = () => {
+  const [active, setActive] = React.useState('editing');
 
   const service = SERVICES[active];
 
   return (
-    <section className="services">
-      <div className="services__tabs">
-        <img
-          src={service.image}
-          alt={service.title}
-          className="service__image"
-        />
+    <div className="services-modal">
+      <img
+        src={service?.image}
+        alt={service?.title}
+        className="services-modal__background"
+      />
+
+      <div className="services-modal__tabs">
         {Object.keys(SERVICES).map((key) => (
-          <button
+          <div
             key={key}
-            onClick={() => setActive(key)}
+            onMouseEnter={() => setActive(key)}
             className={
-              'services__tab ' + (active === key ? 'services__tab--active' : '')
+              'services-modal__tab ' +
+              (active === key ? 'services-modal__tab--active' : '')
             }
           >
-            {SERVICES[key].title}
-          </button>
+            <h3 className="services-modal__tab-title">{SERVICES[key].title}</h3>
+          </div>
         ))}
       </div>
 
-      <div className="services__card">
-        <h3 className="card__title">{service.title}</h3>
-        <p className="card__description">{service.description}</p>
+      <div className="services-modal__card">
+        <h3 className="services-modal__card-title">{service?.title}</h3>
+        <p className="services-modal__card-description">
+          {service?.description}
+        </p>
       </div>
-    </section>
+    </div>
   );
 };
+
+export default ServicesModal;

@@ -1,16 +1,18 @@
 @import url('../node_modules/normalize.css/normalize.css');
 @import url('./components/Header/Header.css');
 @import url('./components/Footer/Footer.css');
-@import url('./pages/NotFound/NotFound.css');
-@import url('./pages/Home/Home.css');
 @import url('./components/AlbumSlider/AlbumSlider.css');
 @import url('./components/SocialsPopup/SocialsPopup.css');
 @import url('./components/Hero/Hero.css');
 @import url('./components/Albums/Albums.css');
 @import url('./components/Studio/Studio.css');
 @import url('./components/StudioFeatures/StudioFeatures.css');
-@import url('./components/AboutServices/Services.css');
+@import url('./components/ServicesModal/ServicesModal.css');
+
+@import url('./pages/Home/Home.css');
 @import url('./pages/About/About.css');
+@import url('./pages/Services/Services.css');
+@import url('./pages/NotFound/NotFound.css');
 
 body {
   position: relative;
