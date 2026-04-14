@@ -12,6 +12,7 @@
 @import url('./pages/Home/Home.css');
 @import url('./pages/About/About.css');
 @import url('./pages/Services/Services.css');
+@import url('./pages/Booking/Booking.css');
 @import url('./pages/NotFound/NotFound.css');
 
 body {

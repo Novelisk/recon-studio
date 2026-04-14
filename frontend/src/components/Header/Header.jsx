@@ -61,7 +61,7 @@ export const Header = () => {
           </li>
           <li className="header__nav-list_left-item">
             <NavLink
-              to="/schedule"
+              to="/booking"
               className={({ isActive }) =>
                 isActive ? 'header__nav-list_item_bold' : ''
               }
