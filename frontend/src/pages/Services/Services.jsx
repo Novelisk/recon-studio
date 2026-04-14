@@ -106,11 +106,11 @@ export const Services = () => {
 
   return (
     <>
-      <h1 className="services__image">Servicios</h1>
+      <h1 className="services__title">Servicios</h1>
       <img
         src="https://png.pngtree.com/background/20250103/original/pngtree-condenser-microphone-close-up-in-music-recording-studio-picture-image_15463756.jpg"
         alt="Services title"
-        className="services__title"
+        className="services__image"
       />
 
       <section className="services">
@@ -224,6 +224,13 @@ export const Services = () => {
         </div>
 
         <div className="services-testimonials">
+          <button
+            className="services__carousel-btn left"
+            onClick={() => scroll('left')}
+          >
+            &#8249;
+          </button>
+
           <div className="services-testimonials__header">
             <h3 className="services-testimonials__title">Testimonios</h3>
             <p className="services-testimonials__description">
@@ -235,18 +242,6 @@ export const Services = () => {
           </div>
 
           <div className="services-testimonials__content" ref={scrollRef}>
-            <button
-              className="services__carousel-btn left"
-              onClick={() => scroll('left')}
-            >
-              &#8249;
-            </button>
-            <button
-              className="services__carousel-btn right"
-              onClick={() => scroll('right')}
-            >
-              &#8250;
-            </button>
             {TESTIMONIALS.map((testimonial) => (
               <div className="services__testimonial" key={testimonial.id}>
                 <div className="services__testimonial-header">
@@ -308,6 +303,12 @@ export const Services = () => {
               </div>
             ))}
           </div>
+          <button
+            className="services__carousel-btn right"
+            onClick={() => scroll('right')}
+          >
+            &#8250;
+          </button>
         </div>
       </section>
     </>
