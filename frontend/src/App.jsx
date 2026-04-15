@@ -4,6 +4,8 @@ import { Home } from './pages/Home/Home';
 import { About } from './pages/About/About';
 import { Services } from './pages/Services/Services';
 import { Booking } from './pages/Booking/Booking';
+import { Policy } from './pages/Policy/Policy';
+import { Terms } from './pages/Terms/Terms';
 import { NotFound } from './pages/NotFound/NotFound';
 
 import { Header } from './components/Header/Header';
@@ -29,6 +31,10 @@ function App() {
         <Route path="/services" element={<Services />} />
 
         <Route path="/booking" element={<Booking />} />
+
+        <Route path="/policy" element={<Policy />} />
+
+        <Route path="/terms" element={<Terms />} />
 
         <Route path="/404" element={<NotFound />} />
         <Route path="*" element={<Navigate to="/404" replace />} />

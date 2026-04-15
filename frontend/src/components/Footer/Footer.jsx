@@ -1,9 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import mapPin from '../../assets/images/map_pin.png';
 import phoneIcon from '../../assets/images/phone-classic.png';
 import facebookIcon from '../../assets/images/Facebook_icon.png';
 import instragramIcon from '../../assets/images/Instagram_icon.png';
 import emailIcon from '../../assets/images/email_icon_white.svg';
+import heartIcon from '../../assets/images/heart-icon.svg';
 
 export const Footer = () => {
   return (
@@ -36,6 +39,11 @@ export const Footer = () => {
             <p className="footer__contact_email">jorge_t.g@hotmail.com</p>
           </div>
 
+          <div className="footer__terms-and-privacy">
+            <Link to="/policy">Política de Privacidad</Link>
+            <Link to="/terms">Términos y condiciones</Link>
+          </div>
+
           <div className="footer__socials">
             <p className="footer__socials_text">Redes:</p>
             <a
@@ -66,6 +74,19 @@ export const Footer = () => {
 
         <div className="footer__copyright">
           Copyright &copy; 2025 Rec-On Studio. Todos los derechos resevados.
+        </div>
+
+        <div className="footer__author">
+          Built with
+          <span>
+            <img src={heartIcon} alt="Golden heart icon" />
+          </span>
+          by{' '}
+          <span>
+            <a href="https://novelisk.dev/" className="footer__author-link">
+              NOVELISK
+            </a>
+          </span>
         </div>
       </footer>
     </>

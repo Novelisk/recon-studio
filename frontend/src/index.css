@@ -14,6 +14,8 @@
 @import url('./pages/Services/Services.css');
 @import url('./pages/Booking/Booking.css');
 @import url('./pages/NotFound/NotFound.css');
+@import url('./pages/Policy/Policy.css');
+@import url('./pages/Terms/Terms.css');
 
 body {
   position: relative;
