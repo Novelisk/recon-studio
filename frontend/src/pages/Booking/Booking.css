@@ -1,6 +1,6 @@
 .booking {
   width: 100%;
-  padding-top: 300px;
+  /* padding-top: 300px; */
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -16,28 +16,10 @@
   line-height: 1.1;
   color: #fff;
 
-  position: relative;
-  top: 50px;
-  left: 550px;
+  padding-top: 80px;
+  padding-bottom: 100px;
 
-  padding-top: 30px;
-
-  z-index: 1;
-
-  background-color: #181518;
-}
-
-.booking__image {
-  height: 504px;
-
-  position: absolute;
-  top: 0;
-  left: 40%;
-
-  background-size: cover;
-  background-position: center;
-
-  z-index: 0;
+  text-align: center;
 }
 
 .booking-container {
@@ -62,13 +44,11 @@
 .booking__aside {
   width: 50%;
   height: 600px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  padding: 160px, 73px;
-  gap: 34px;
 
   background-color: #38373c;
   backdrop-filter: blur(10px);
@@ -76,7 +56,7 @@
 }
 
 .booking__aside-title {
-  height: 136px;
+  padding-bottom: 40px;
 
   font-size: 48px;
   font-weight: 700;
@@ -84,27 +64,43 @@
   color: #fff;
 }
 
+.booking__aside-subtitle {
+  padding-bottom: 35px;
+
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #b3b3b3;
+}
+
 .booking__aside-contact {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-around;
   gap: 23px;
 }
 
 .booking__contact-line {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 60px;
 }
 
 .booking__contact-label {
+  width: 65px;
   font-size: 16px;
   color: #b5b5b5;
 }
 
 .booking__contact-value {
+  width: 100%;
   font-size: 16px;
   color: #cfab82;
+  text-align: start;
+}
+
+.booking__contact-value--mail {
+  padding-right: 13px;
 }
 
 .booking-form {
@@ -176,6 +172,10 @@
   height: 150px;
 }
 
+.booking-form__input--select {
+  padding-left: 5px;
+}
+
 .booking-form__input--textarea::placeholder {
   padding-top: 5px;
 }
@@ -219,11 +219,32 @@
 .booking-form__button {
   width: 200px;
   padding: 16px 24px;
-
   margin-top: 120px;
 
   font-size: 18px;
   font-weight: 600;
   color: #181518;
   background-color: #cfab82;
+}
+
+.booking-form__button:hover {
+  transform: translateY(5px) scale(0.95);
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+input[type='date'] {
+  position: relative;
+}
+
+input[type='date']::-webkit-calendar-picker-indicator {
+  position: absolute;
+  right: 20px;
+  transform: scale(1.9);
+  cursor: pointer;
+  background-image: url('../../assets/images/calendar-icon.svg');
+}
+
+input[type='date']::-webkit-datetime-edit {
+  padding-left: 10px;
 }
