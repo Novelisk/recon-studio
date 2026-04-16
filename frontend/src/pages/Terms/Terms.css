@@ -1,13 +1,13 @@
 .terms {
   margin: 0 auto;
   width: 100%;
-  padding: 100px 0;
+  padding: 100px 80px 50px 80px;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .terms-header {
+  margin-bottom: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,13 +20,13 @@
   color: #cfab82;
 }
 
-.privacy-header__container {
+.terms-header__container {
   display: flex;
-  align-items: center;
+  justify-content: center;
   gap: 35px;
 }
 
-.privacy-header__subtitle {
+.terms-header__subtitle {
   font-size: 28px;
   color: #fff;
 }
@@ -34,11 +34,13 @@
 .terms-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 20px;
+  align-items: flex-start;
+
+  padding-bottom: 45px;
 }
 
 .terms-content__title {
+  padding-bottom: 12px;
   font-size: 36px;
   font-weight: 600;
   color: #8a715a;
@@ -50,16 +52,22 @@
   color: #fff;
 }
 
+.terms-content__paragraph--bottom {
+  padding-top: 12px;
+}
+
 .terms-content__paragraph span {
   color: #cfab82;
 }
 
 .terms-content__list {
   margin: 0;
+  padding-top: 12px;
+  gap: 5px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 20px;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .terms-content__list-item::marker {

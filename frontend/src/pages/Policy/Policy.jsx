@@ -5,7 +5,7 @@ export const Policy = () => {
     <section className="policy">
       <div className="policy-header">
         <h1 className="policy-header__title">POLÍTICA DE PRIVACIDAD.</h1>
-        <div className="privacy-header__container">
+        <div className="policy-header__container">
           <p className="policy-header__subtitle">Rec-On Studio</p>
           <p className="policy-header__subtitle">
             Úlima actualización: Abril 2026.
@@ -15,7 +15,7 @@ export const Policy = () => {
 
       <div className="policy-content" id="1">
         <h2 className="policy-content__title">
-          1. Responsable del tratamiento de datos.
+          1. Responsable del manejo de datos.
         </h2>
         <p className="policy-content__paragraph">
           Rec-On Studio, con domicilio en Ciudad de México, México, y
@@ -23,11 +23,10 @@ export const Policy = () => {
           tratamiento de los datos personales recabados a través de este sitio
           web.
         </p>
-        <p className="policy-content__paragraph">
+        <p className="policy-content__paragraph policy-content__paragraph--bottom">
           Para cualquier duda o solicitud relacionada con la privacidad de tus
           datos, puedes contactarnos en:
-          <br />
-          <span>jorge_t.g@hotmail.com</span>
+          <span> jorge_t.g@hotmail.com</span>
         </p>
       </div>
 
@@ -66,7 +65,7 @@ export const Policy = () => {
             Establecer comunicación con el usuario.
           </li>
         </ul>
-        <p className="policy-content__paragraph">
+        <p className="policy-content__paragraph policy-content__paragraph--bottom">
           Rec-On Studio no utiliza los datos para fines publicitarios ni los
           comparte con terceros.
         </p>
@@ -110,7 +109,7 @@ export const Policy = () => {
             Limitar u oponerse a su uso.
           </li>
         </ul>
-        <p className="policy-content__paragraph">
+        <p className="policy-content__paragraph policy-content__paragraph--bottom">
           Para ejercer estos derechos, deberá enviar una solicitud al correo
           indicado.
         </p>

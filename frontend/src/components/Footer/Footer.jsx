@@ -39,9 +39,21 @@ export const Footer = () => {
             <p className="footer__contact_email">jorge_t.g@hotmail.com</p>
           </div>
 
-          <div className="footer__terms-and-privacy">
-            <Link to="/policy">Política de Privacidad</Link>
-            <Link to="/terms">Términos y condiciones</Link>
+          <div className="footer__legal">
+            <Link
+              to="/policy"
+              className="footer__legal-item"
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            >
+              Política de Privacidad
+            </Link>
+            <Link
+              to="/terms"
+              className="footer__legal-item"
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            >
+              Términos & Condiciones
+            </Link>
           </div>
 
           <div className="footer__socials">
@@ -79,11 +91,20 @@ export const Footer = () => {
         <div className="footer__author">
           Built with
           <span>
-            <img src={heartIcon} alt="Golden heart icon" />
+            <img
+              src={heartIcon}
+              alt="Golden heart icon"
+              className="footer__author-image"
+            />
           </span>
           by{' '}
           <span>
-            <a href="https://novelisk.dev/" className="footer__author-link">
+            <a
+              href="https://novelisk.dev/"
+              className="footer__author-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               NOVELISK
             </a>
           </span>

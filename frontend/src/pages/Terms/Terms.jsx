@@ -5,7 +5,7 @@ export const Terms = () => {
     <section className="terms">
       <div className="terms-header">
         <h1 className="terms-header__title">TÉRMINOS Y CONDICIONES.</h1>
-        <div className="privacy-header__container">
+        <div className="terms-header__container">
           <p className="terms-header__subtitle">Rec-On Studio</p>
           <p className="terms-header__subtitle">
             Úlima actualización: Abril 2026.
