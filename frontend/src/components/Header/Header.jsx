@@ -79,7 +79,30 @@ export const Header = () => {
         </ul>
         <ul className="header__nav-list_right">
           <li className="header__nav-list_right-item">
-            <NavLink to="/contact">CONTACTO</NavLink>
+            <h3>CONTACTO</h3>
+
+            <div className="header__contact-dropdown">
+              <div className="header__contact-container">
+                <h5 className="header__contact-container--title">Dirección:</h5>
+                <p className="header__contact-container--text">
+                  Retorno 809, El Centinela, Coyoacán, CDMX
+                </p>
+              </div>
+
+              <div className="header__contact-container">
+                <h5 className="header__contact-container--title">Teléfono:</h5>
+                <p className="header__contact-container--text">
+                  +52 00 00 00 00
+                </p>
+              </div>
+
+              <div className="header__contact-container">
+                <h5 className="header__contact-container--title">Correo:</h5>
+                <p className="header__contact-container--text">
+                  jorge_t.g@hotmail.com
+                </p>
+              </div>
+            </div>
           </li>
         </ul>
       </nav>

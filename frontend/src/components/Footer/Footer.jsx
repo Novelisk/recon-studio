@@ -45,14 +45,14 @@ export const Footer = () => {
               className="footer__legal-item"
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             >
-              Política de Privacidad
+              POLÍTICA DE PRIVACIDAD
             </Link>
             <Link
               to="/terms"
               className="footer__legal-item"
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             >
-              Términos & Condiciones
+              TÉRMINOS & CONDICIONES
             </Link>
           </div>
 
