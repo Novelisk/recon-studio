@@ -23,7 +23,8 @@ function App() {
       {!hideHeader && <Header />}
 
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Navigate to="/home" />} />
+
         <Route path="/home" element={<Home />} />
 
         <Route path="/about" element={<About />} />
@@ -37,6 +38,7 @@ function App() {
         <Route path="/terms" element={<Terms />} />
 
         <Route path="/404" element={<NotFound />} />
+
         <Route path="*" element={<Navigate to="/404" replace />} />
       </Routes>
 

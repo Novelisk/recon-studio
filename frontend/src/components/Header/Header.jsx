@@ -10,10 +10,11 @@ export const Header = () => {
         <ul className="header__nav-list_left">
           <li className="header__nav-list_left-item">
             <NavLink
-              to="/home"
+              to={'/home' || '/'}
               className={({ isActive }) =>
                 isActive ? 'header__nav-list_item_bold' : ''
               }
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             >
               {({ isActive }) => (
                 <div className="header__nav-list_item-container">
@@ -31,6 +32,7 @@ export const Header = () => {
               className={({ isActive }) =>
                 isActive ? 'header__nav-list_item_bold' : ''
               }
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             >
               {({ isActive }) => (
                 <div className="header__nav-list_item-container">
@@ -48,6 +50,7 @@ export const Header = () => {
               className={({ isActive }) =>
                 isActive ? 'header__nav-list_item_bold' : ''
               }
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             >
               {({ isActive }) => (
                 <div className="header__nav-list_item-container">
@@ -65,6 +68,7 @@ export const Header = () => {
               className={({ isActive }) =>
                 isActive ? 'header__nav-list_item_bold' : ''
               }
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             >
               {({ isActive }) => (
                 <div className="header__nav-list_item-container">
