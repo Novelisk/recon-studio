@@ -7,89 +7,7 @@ import peopleIcon from '../../assets/images/users-icon.svg';
 import microphoneIcon from '../../assets/images/microphone-icon.svg';
 import starIcon from '../../assets/images/star-icon.svg';
 import doubleQuoteIcon from '../../assets/images/double-quote-icon.svg';
-
-const TESTIMONIALS = [
-  {
-    id: 1,
-    name: 'Juan Pérez',
-    role: 'Cliente',
-    title: 'Profesionales y comprometidos con la calidad. Recomendado.',
-    content:
-      'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.',
-    portrait:
-      'https://upload.wikimedia.org/wikipedia/commons/f/f5/Poster-sized_portrait_of_Barack_Obama.jpg',
-  },
-  {
-    id: 2,
-    name: 'María García',
-    role: 'Cliente',
-    title: 'Profesionales y comprometidos con la calidad. Recomendado.',
-    content:
-      'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.',
-    portrait:
-      'https://upload.wikimedia.org/wikipedia/commons/f/f5/Poster-sized_portrait_of_Barack_Obama.jpg',
-  },
-  {
-    id: 3,
-    name: 'María García',
-    role: 'Cliente',
-    title: 'Profesionales y comprometidos con la calidad. Recomendado.',
-    content:
-      'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.',
-    portrait:
-      'https://upload.wikimedia.org/wikipedia/commons/f/f5/Poster-sized_portrait_of_Barack_Obama.jpg',
-  },
-  {
-    id: 4,
-    name: 'María García',
-    role: 'Cliente',
-    title: 'Profesionales y comprometidos con la calidad. Recomendado.',
-    content:
-      'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.',
-    portrait:
-      'https://upload.wikimedia.org/wikipedia/commons/f/f5/Poster-sized_portrait_of_Barack_Obama.jpg',
-  },
-  {
-    id: 5,
-    name: 'María García',
-    role: 'Cliente',
-    title: 'Profesionales y comprometidos con la calidad. Recomendado.',
-    content:
-      'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.',
-    portrait:
-      'https://upload.wikimedia.org/wikipedia/commons/f/f5/Poster-sized_portrait_of_Barack_Obama.jpg',
-  },
-  {
-    id: 6,
-    name: 'María García',
-    role: 'Cliente',
-    title: 'Profesionales y comprometidos con la calidad. Recomendado.',
-    content:
-      'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.',
-    portrait:
-      'https://upload.wikimedia.org/wikipedia/commons/f/f5/Poster-sized_portrait_of_Barack_Obama.jpg',
-  },
-  {
-    id: 7,
-    name: 'María García',
-    role: 'Cliente',
-    title: 'Profesionales y comprometidos con la calidad. Recomendado.',
-    content:
-      'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.',
-    portrait:
-      'https://upload.wikimedia.org/wikipedia/commons/f/f5/Poster-sized_portrait_of_Barack_Obama.jpg',
-  },
-  {
-    id: 8,
-    name: 'María García',
-    role: 'Cliente',
-    title: 'Profesionales y comprometidos con la calidad. Recomendado.',
-    content:
-      'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.',
-    portrait:
-      'https://upload.wikimedia.org/wikipedia/commons/f/f5/Poster-sized_portrait_of_Barack_Obama.jpg',
-  },
-];
+import TESTIMONIALS from '../../data/testimonialsData.js';
 
 export const Services = () => {
   const scrollRef = useRef(null);
@@ -108,7 +26,7 @@ export const Services = () => {
     <>
       <h1 className="services__title">Servicios</h1>
       <img
-        src="https://png.pngtree.com/background/20250103/original/pngtree-condenser-microphone-close-up-in-music-recording-studio-picture-image_15463756.jpg"
+        src="https://ik.imagekit.io/novelisk/Rec-On/Rec-On%20(2%20of%2026).jpg?updatedAt=1778612563021"
         alt="Services title"
         className="services__image"
       />

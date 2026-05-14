@@ -5,7 +5,7 @@ const SERVICES = {
     title: 'Voice Recording',
     description:
       'Grabación de voces para tus proyectos de audio. Ya sea para podcasts, audiolibros o cualquier otro proyecto que requiera voces claras y profesionales, nuestro servicio de grabación de voces está aquí para ayudarte a dar vida a tus ideas.',
-    image: 'https://images.unsplash.com/photo-1511379938547-c1f69419868d',
+    image: 'https://ik.imagekit.io/novelisk/Rec-On/voice-recording.png',
   },
   mastering: {
     title: 'Track Mastering',
@@ -17,19 +17,21 @@ const SERVICES = {
     title: 'Audio Editing',
     description:
       'Edición de audio para mejorar la calidad y la claridad de tus grabaciones. Nuestro servicio de edición de audio se encarga de eliminar ruidos no deseados, ajustar niveles y mejorar la calidad general de tu audio.',
-    image: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4',
+    image:
+      'https://ik.imagekit.io/novelisk/Rec-On/Rec-On%20(12%20of%2026).jpg?updatedAt=1778612559658',
   },
   mixing: {
     title: 'Track Mixing',
     description:
       'Mezcla de pistas para lograr un sonido equilibrado y profesional. Nos aseguramos de que cada elemento de tu música se mezcle perfectamente para crear una experiencia auditiva excepcional.',
-    image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085',
+    image:
+      'https://ik.imagekit.io/novelisk/Rec-On/Rec-On%20(10%20of%2026).jpg?updatedAt=1778612562264',
   },
   recording: {
     title: 'Track Recording',
     description:
       'Grabación de pistas únicas o en conjunto con el mejor equipo de grabación. Nuestro servicio de grabación de pistas te permite capturar cada detalle de tu música con la más alta calidad, ya sea que estés grabando instrumentos, voces o cualquier otro elemento musical.',
-    image: 'https://images.unsplash.com/photo-1519681393784-d120267933ba',
+    image: 'https://ik.imagekit.io/novelisk/Rec-On/track-recording.png',
   },
 };
 

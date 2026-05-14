@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, act } from 'react';
+import { studioData } from '../../data/studioData.js';
 
 export const About = () => {
   const [activeTab, setActiveTab] = useState(null);
@@ -24,7 +25,8 @@ export const About = () => {
   return (
     <>
       <img
-        src="https://static.vecteezy.com/system/resources/thumbnails/036/483/161/small/ai-generated-interior-of-a-recording-studio-with-lots-of-equipment-ai-generative-photo.jpg"
+        // src="https://static.vecteezy.com/system/resources/thumbnails/036/483/161/small/ai-generated-interior-of-a-recording-studio-with-lots-of-equipment-ai-generative-photo.jpg"
+        src="https://ik.imagekit.io/novelisk/Rec-On/Rec-On%20(11%20of%2026).jpg"
         alt="Studio photo"
         className="about-header__image"
       />
@@ -108,7 +110,8 @@ export const About = () => {
                 onClick={() => handleClick('control')}
               >
                 <img
-                  src="https://www.shutterstock.com/image-photo/empty-control-room-filled-buttons-600nw-2450842423.jpg"
+                  // src="https://www.shutterstock.com/image-photo/empty-control-room-filled-buttons-600nw-2450842423.jpg"
+                  src="https://ik.imagekit.io/novelisk/Rec-On/Rec-On%20(2%20of%2026).jpg"
                   alt="Control Room image"
                   className="about-studio__grid-image"
                 />
@@ -119,34 +122,21 @@ export const About = () => {
                 <div
                   className={`about-studio__subgrid ${activeTab === 'control' ? 'open' : ''}`}
                 >
-                  <div className="subgrid__subcard">
-                    <img src="" alt="" className="subcard__image" />
-                    <h3 className="subcard__title">Consola</h3>
-                    <p className="subcard__description">
-                      Descripción de la consola...
-                    </p>
-                  </div>
-                  <div className="subgrid__subcard">
-                    <img src="" alt="" className="subcard__image" />
-                    <h3 className="subcard__title">Monitores</h3>
-                    <p className="subcard__description">
-                      Descripción de los monitores...
-                    </p>
-                  </div>
-                  <div className="subgrid__subcard">
-                    <img src="" alt="" className="subcard__image" />
-                    <h3 className="subcard__title">Rack</h3>
-                    <p className="subcard__description">
-                      Descripción del rack...
-                    </p>
-                  </div>
-                  <div className="subgrid__subcard">
-                    <img src="" alt="" className="subcard__image" />
-                    <h3 className="subcard__title">Pedales</h3>
-                    <p className="subcard__description">
-                      Descripción de los pedales...
-                    </p>
-                  </div>
+                  {studioData[activeTab].map((item) => (
+                    <div
+                      className="subgrid__subcard"
+                      key={item.id}
+                      onClick={() => setSelectedItem(item)}
+                    >
+                      <img
+                        src={item.image1}
+                        alt={item.title}
+                        className="subcard__image"
+                      />
+                      <h3 className="subcard__title">{item.title}</h3>
+                      <p className="subcard__description">{item.excerpt}</p>
+                    </div>
+                  ))}
                 </div>
               )}
             </div>
@@ -158,7 +148,8 @@ export const About = () => {
                 onClick={() => handleClick('live')}
               >
                 <img
-                  src="https://static.vecteezy.com/system/resources/thumbnails/071/606/027/small/a-music-room-with-purple-walls-and-musical-instruments-photo.jpg"
+                  // src="https://static.vecteezy.com/system/resources/thumbnails/071/606/027/small/a-music-room-with-purple-walls-and-musical-instruments-photo.jpg"
+                  src="https://ik.imagekit.io/novelisk/Rec-On/Rec-On%20(21%20of%2026).jpg"
                   alt="Live Room image"
                   className="about-studio__grid-image"
                 />
@@ -169,70 +160,21 @@ export const About = () => {
                 <div
                   className={`about-studio__subgrid ${activeTab === 'live' ? 'open' : ''}`}
                 >
-                  <div
-                    className="subgrid__subcard"
-                    onClick={() =>
-                      setSelectedItem({
-                        title: 'Batería',
-                        image:
-                          'https://images.squarespace-cdn.com/content/v1/65943bb33d1b5c4164633d97/df9ae197-1674-4152-a3f4-60c164101af8/DSCF2882+%282%29.jpeg',
-                        description:
-                          'Descripción detallada de la batería, platos, atriles, pedales, etc...',
-                      })
-                    }
-                  >
-                    <img
-                      src="https://images.squarespace-cdn.com/content/v1/65943bb33d1b5c4164633d97/df9ae197-1674-4152-a3f4-60c164101af8/DSCF2882+%282%29.jpeg"
-                      alt=""
-                      className="subcard__image"
-                    />
-                    <h3 className="subcard__title">Batería</h3>
-                    <p className="subcard__description">
-                      Descripción de la batería...
-                    </p>
-                  </div>
-                  <div className="subgrid__subcard">
-                    <img src="" alt="" className="subcard__image" />
-                    <h3 className="subcard__title">Combo Orange</h3>
-                    <p className="subcard__description">
-                      Descripción del combo orange...
-                    </p>
-                  </div>
-                  <div className="subgrid__subcard">
-                    <img src="" alt="" className="subcard__image" />
-                    <h3 className="subcard__title">Combo Laney</h3>
-                    <p className="subcard__description ">
-                      Descripción del combo laney...
-                    </p>
-                  </div>
-                  <div className="subgrid__subcard">
-                    <img src="" alt="" className="subcard__image" />
-                    <h3 className="subcard__title">Amplificadores Fender</h3>
-                    <p className="subcard__description">
-                      Descripción de los amplificadores Fender...
-                    </p>
-                  </div>
-                  <div className="subgrid__subcard">
-                    <img src="" alt="" className="subcard__image" />
-                    <h3 className="subcard__title">Combo Bajo</h3>
-                    <p className="subcard__description">
-                      Descripción del combo bajo...
-                    </p>
-                  </div>
-                  <div className="subgrid__subcard">
-                    <img src="" alt="" className="subcard__image" />
-                    <h3 className="subcard__title">Microfonía</h3>
-                    <p className="subcard__description">
-                      Descripción de la microfonía...
-                    </p>
-                  </div>
-                  <div className="subgrid__subcard">
-                    <img src="" alt="" className="subcard__image" />
-                    <h3 className="subcard__title">Monitoreo</h3>
-                    <p className="subcard__description">
-                      Descripción del monitoreo...
-                    </p>
-                  </div>
+                  {studioData[activeTab].map((item) => (
+                    <div
+                      className="subgrid__subcard"
+                      key={item.id}
+                      onClick={() => setSelectedItem(item)}
+                    >
+                      <img
+                        src={item.image1}
+                        alt={item.title}
+                        className="subcard__image"
+                      />
+                      <h3 className="subcard__title">{item.title}</h3>
+                      <p className="subcard__description">{item.excerpt}</p>
+                    </div>
+                  ))}
                 </div>
               )}
             </div>
@@ -245,12 +187,19 @@ export const About = () => {
                 onClick={(e) => e.stopPropagation()}
               >
                 <img
-                  src={selectedItem.image}
+                  src={selectedItem.image2}
                   alt={selectedItem.title}
                   className="modal__image"
                 />
                 <h2 className="modal__title">{selectedItem.title}</h2>
-                <p className="modal__description">{selectedItem.description}</p>
+                <p className="modal__description">{selectedItem.content}</p>
+                <ul className="modal__list">
+                  {selectedItem.features.map((feature, index) => (
+                    <li key={index} className="modal__list-item">
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
           )}

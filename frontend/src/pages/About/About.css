@@ -8,16 +8,16 @@
 }
 
 .about-header__title {
-  max-width: 550px;
+  width: 435px;
   max-height: 400px;
-  font-size: 150px;
+  font-size: 113px;
   font-weight: 700;
   line-height: 1.1;
   color: #fff;
 
   position: absolute;
   top: 50px;
-  left: 550px;
+  left: 450px;
 
   padding-top: 30px;
 
@@ -35,6 +35,7 @@
 
   background-size: cover;
   background-position: center;
+  object-fit: cover;
 
   z-index: 0;
 }
@@ -174,8 +175,8 @@
 .subcard__image {
   width: 100%;
   height: 200px;
-  background-size: cover;
-  background-position: center;
+  object-fit: cover;
+  object-position: bottom;
   cursor: pointer;
 }
 
@@ -194,7 +195,8 @@
 }
 
 .subcard__description,
-.modal__description {
+.modal__description,
+.modal__list-item {
   font-size: 14px;
   color: #b5b5b5;
   text-align: center;
@@ -232,10 +234,27 @@
 }
 
 .modal__image {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
+  width: 800px;
+  height: 500px;
+  object-fit: contain;
   border-radius: 12px;
+}
+
+.modal__description {
+  margin-top: 5px;
+}
+
+.modal__list {
+  gap: 2px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-top: 7px;
+  padding-left: 15%;
+}
+
+.modal__list-item {
+  text-align: left;
 }
 
 /* Key Frames for modal animation */
