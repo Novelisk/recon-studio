@@ -67,7 +67,6 @@
 .services-modal__card {
   position: absolute;
   bottom: 60px;
-  /* right: 80px; */
   right: 5%;
   left: 5%;
   z-index: 2;
@@ -117,4 +116,60 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+@media (max-width: 480px) {
+  .services-modal {
+    min-height: 75dvh;
+    height: auto;
+  }
+
+  .services-modal__tabs {
+    gap: 12px;
+    padding: 16px;
+    justify-content: flex-start;
+  }
+
+  .services-modal__tab-title {
+    font-size: 18px;
+  }
+
+  .services-modal__tab--active {
+    padding: 10px 14px;
+    transform: none;
+  }
+
+  .services-modal__card {
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+    max-width: none;
+    padding: 20px;
+  }
+
+  .services-modal__card-title {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .services-modal__tabs {
+    gap: 20px;
+    padding: 24px;
+  }
+
+  .services-modal__card {
+    left: 24px;
+    right: 24px;
+    bottom: 24px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1440px) {
+}
+
+@media (min-width: 1441px) and (max-width: 2560px) {
+}
+
+@media (min-width: 2561px) {
 }

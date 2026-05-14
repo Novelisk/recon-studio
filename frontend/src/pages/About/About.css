@@ -268,3 +268,151 @@
     transform: scale(1);
   }
 }
+
+@media (max-width: 480px) {
+  .about {
+    padding-top: 200px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .about-header__title {
+    position: static;
+    width: auto;
+    font-size: 52px;
+    text-align: center;
+    padding-top: 0;
+  }
+
+  .about-header__image {
+    position: static;
+    width: 100%;
+    height: 260px;
+  }
+
+  .about-team,
+  .about-studio {
+    padding: 40px 0 0;
+    gap: 32px;
+  }
+
+  .about-team__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-team__member {
+    width: 100%;
+    height: auto;
+  }
+
+  .about-studio__grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .about-studio__card {
+    width: 100%;
+    padding-bottom: 32px;
+  }
+
+  .about-studio__subgrid {
+    grid-template-columns: 1fr;
+  }
+
+  .subgrid__subcard {
+    width: 100%;
+  }
+
+  .modal__image {
+    width: 100%;
+    height: auto;
+    max-height: 40vh;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .about {
+    padding-top: 260px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .about-header__title {
+    left: 0;
+    top: 30px;
+    width: 100%;
+    text-align: center;
+    font-size: 78px;
+  }
+
+  .about-header__image {
+    left: 50%;
+    transform: translateX(-50%);
+    height: 360px;
+  }
+
+  .about-team,
+  .about-studio {
+    padding: 60px 0 0;
+  }
+
+  .about-team__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-team__member {
+    width: 100%;
+    max-width: 310px;
+  }
+
+  .about-studio__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-studio__card {
+    width: 100%;
+  }
+
+  .modal__image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1440px) {
+  .about-team,
+  .about-studio {
+    padding-left: clamp(40px, 10vw, 310px);
+    padding-right: clamp(40px, 10vw, 310px);
+  }
+
+  .about-team__grid {
+    grid-template-columns: repeat(2, minmax(260px, 310px));
+    justify-content: center;
+  }
+
+  .about-studio__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-studio__card {
+    width: min(100%, 920px);
+  }
+
+  .about-header__title {
+    font-size: clamp(76px, 8vw, 113px);
+    left: clamp(160px, 30vw, 450px);
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 2560px) {
+}
+
+@media (min-width: 2561px) {
+  .about-team,
+  .about-studio {
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -73,3 +73,79 @@
 .policy-content__list-item::marker {
   color: #cfab82;
 }
+
+@media (max-width: 480px) {
+  .policy {
+    padding: 80px 16px 36px;
+  }
+
+  .policy-header {
+    margin-bottom: 28px;
+  }
+
+  .policy-header__title {
+    font-size: 32px;
+  }
+
+  .policy-header__container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .policy-header__subtitle {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .policy-content {
+    padding-bottom: 26px;
+  }
+
+  .policy-content__title {
+    font-size: 24px;
+  }
+
+  .policy-content__paragraph,
+  .policy-content__list-item {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .policy {
+    padding: 90px 24px 40px;
+  }
+
+  .policy-header__title {
+    font-size: 40px;
+  }
+
+  .policy-header__subtitle {
+    font-size: 24px;
+  }
+
+  .policy-content__title {
+    font-size: 30px;
+  }
+
+  .policy-content__paragraph,
+  .policy-content__list-item {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1440px) {
+  .policy {
+    padding-left: clamp(32px, 6vw, 80px);
+    padding-right: clamp(32px, 6vw, 80px);
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 2560px) {
+}
+
+@media (min-width: 2561px) {
+  .policy {
+    max-width: 1920px;
+  }
+}

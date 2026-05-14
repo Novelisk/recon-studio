@@ -1,15 +1,9 @@
 .albums {
-  /* position: relative; */
   margin: 104px auto 0;
-  /* height: fit-content; */
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 80px;
-  /* background-image: url('https://i.ibb.co/nNRW1LQs/soundwave-img.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center right; */
 }
 
 .albums__header {
@@ -33,4 +27,48 @@
   color: #b5b5b5;
   font-size: 16px;
   line-height: auto;
+}
+
+@media (max-width: 480px) {
+  .albums {
+    margin-top: 64px;
+    flex-direction: column;
+    gap: 24px;
+    padding: 0 16px;
+  }
+
+  .albums__header {
+    width: 100%;
+    height: auto;
+  }
+
+  .albums__title {
+    font-size: 34px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .albums {
+    flex-direction: column;
+    gap: 28px;
+    padding: 0 24px;
+  }
+
+  .albums__header {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1440px) {
+  .albums {
+    gap: clamp(24px, 4vw, 80px);
+    padding: 0 clamp(20px, 4vw, 60px);
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 2560px) {
+}
+
+@media (min-width: 2561px) {
 }

@@ -17,3 +17,49 @@
   color: white;
   margin: 345px auto 337px 309px;
 }
+
+@media (max-width: 480px) {
+  .hero {
+    min-height: 70vh;
+  }
+
+  .hero__title {
+    font-size: 34px;
+    margin: 120px 16px 80px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .hero {
+    min-height: 80vh;
+  }
+
+  .hero__title {
+    font-size: 52px;
+    margin: 180px 24px 120px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1440px) {
+  .hero__title {
+    font-size: clamp(56px, 6vw, 84px);
+    margin: clamp(180px, 22vh, 345px) auto clamp(160px, 20vh, 337px)
+      clamp(40px, 8vw, 309px);
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 2560px) {
+  .hero__title {
+    font-size: 96px;
+    margin-left: 12vw;
+  }
+}
+
+@media (min-width: 2561px) {
+  .hero__title {
+    font-size: 120px;
+    margin-left: 14vw;
+  }
+}

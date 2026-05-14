@@ -9,13 +9,17 @@
   opacity: 0;
   transform: translateY(6px);
   pointer-events: none;
-  transition: opacity 0.25s ease, transform 0.25 ease;
+  transition:
+    opacity 0.25s ease,
+    transform 0.25 ease;
 }
 
 .social-popup__link {
   color: #cfab82;
   font-size: 18px;
-  transition: transform 0.2s ease, color 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease;
 }
 
 .album:hover .social-popup {
@@ -26,4 +30,29 @@
 
 .social-popup__link:hover {
   opacity: 70%;
+}
+
+@media (max-width: 480px) {
+  .social-popup {
+    right: 8px;
+    top: -12px;
+    gap: 10px;
+    padding: 6px 10px;
+  }
+
+  .social-popup__link {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+}
+
+@media (min-width: 769px) and (max-width: 1440px) {
+}
+
+@media (min-width: 1441px) and (max-width: 2560px) {
+}
+
+@media (min-width: 2561px) {
 }
