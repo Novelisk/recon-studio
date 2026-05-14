@@ -76,7 +76,7 @@
 
 @media (max-width: 480px) {
   .policy {
-    padding: 80px 16px 36px;
+    padding: 80px 0 36px 5px;
   }
 
   .policy-header {
@@ -84,7 +84,7 @@
   }
 
   .policy-header__title {
-    font-size: 32px;
+    font-size: 28px;
   }
 
   .policy-header__container {
@@ -93,7 +93,7 @@
   }
 
   .policy-header__subtitle {
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
   }
 
@@ -107,7 +107,11 @@
 
   .policy-content__paragraph,
   .policy-content__list-item {
-    font-size: 16px;
+    font-size: 14px;
+  }
+
+  .policy-content__list {
+    width: 90%;
   }
 }
 

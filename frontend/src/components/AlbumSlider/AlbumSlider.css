@@ -9,10 +9,15 @@
 .album-slider__container {
   margin: 0;
   display: flex;
+  gap: 24px;
   align-items: center;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  width: calc((310px + 32px) * 3);
+  width: calc((310px + 24px) * 3);
+}
+
+.album-slider__controls {
+  display: none;
 }
 
 .album {
@@ -76,28 +81,81 @@
 }
 
 @media (max-width: 480px) {
+  .album-slider {
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+    flex-direction: column;
+    gap: 10px;
+    overflow: hidden;
+  }
+
   .album-slider__container {
     width: 100%;
-    overflow-x: auto;
+    max-width: 100%;
+    overflow-x: hidden;
     scroll-snap-type: x mandatory;
+    scroll-padding-inline: calc((100% - 300px) / 2);
+    gap: 0;
+    padding: 0 calc((100% - 300px) / 2);
+    box-sizing: border-box;
+    scrollbar-width: none;
+    gap: 75px;
+  }
+
+  .album-slider__container::-webkit-scrollbar {
+    display: none;
   }
 
   .album {
-    width: calc(100vw - 64px);
-    max-width: 310px;
-    scroll-snap-align: start;
+    margin-top: 12px;
+    width: 300px;
+    min-width: 300px;
+    max-width: 300px;
+    height: auto;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-snap-align: center;
   }
 
   .album-slider__image {
-    width: 100%;
-    height: 240px;
+    width: 300px;
+    height: 300px;
+    max-width: 100%;
   }
 
-  .album-slider__btn-left,
-  .album-slider__btn-right {
-    width: 30px;
-    height: 30px;
+  .album-slider__title {
+    margin-top: 14px;
     font-size: 20px;
+    width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  .album-slider__artist {
+    font-size: 14px;
+  }
+
+  .album-slider__btn {
+    display: none;
+  }
+
+  .album-slider__controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+  }
+
+  .album-slider__control-btn {
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 50%;
+    background-color: #cfba82;
+    color: #181518;
+    font-size: 20px;
+    cursor: pointer;
   }
 }
 
@@ -112,8 +170,13 @@
 }
 
 @media (min-width: 769px) and (max-width: 1440px) {
+  .album-slider {
+    max-width: 100%;
+    overflow: hidden;
+  }
+
   .album-slider__container {
-    width: min(100%, calc((310px + 32px) * 3));
+    width: min(100%, calc((310px + 24px) * 3));
   }
 }
 

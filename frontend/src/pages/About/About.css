@@ -271,17 +271,28 @@
 
 @media (max-width: 480px) {
   .about {
-    padding-top: 200px;
-    padding-left: 16px;
+    margin: 0 auto;
+    padding-top: 10px;
     padding-right: 16px;
   }
 
+  .about-team__header,
+  .about-studio__header {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
   .about-header__title {
-    position: static;
+    /* position: static;
     width: auto;
     font-size: 52px;
     text-align: center;
-    padding-top: 0;
+    padding-top: 10px; */
+    display: none;
   }
 
   .about-header__image {
@@ -294,6 +305,10 @@
   .about-studio {
     padding: 40px 0 0;
     gap: 32px;
+  }
+
+  .about-team {
+    padding-top: 0;
   }
 
   .about-team__grid {
@@ -310,6 +325,10 @@
     gap: 32px;
   }
 
+  .about-studio__grid-image {
+    height: 260px;
+  }
+
   .about-studio__card {
     width: 100%;
     padding-bottom: 32px;
@@ -321,6 +340,34 @@
 
   .subgrid__subcard {
     width: 100%;
+  }
+
+  .subcard__image {
+    width: 250px;
+  }
+
+  .modal__content {
+    width: calc(100vw - 32px);
+    max-height: 82vh;
+    overflow-y: auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .modal__title {
+    font-size: 20px;
+    margin-top: 8px;
+  }
+
+  .modal__description,
+  .modal__list-item {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .modal__list {
+    padding-left: 18px;
+    margin-top: 6px;
   }
 
   .modal__image {
@@ -380,28 +427,64 @@
 }
 
 @media (min-width: 769px) and (max-width: 1440px) {
+  .about {
+    padding-left: clamp(24px, 4vw, 60px);
+    padding-right: clamp(24px, 4vw, 60px);
+  }
+
   .about-team,
   .about-studio {
-    padding-left: clamp(40px, 10vw, 310px);
-    padding-right: clamp(40px, 10vw, 310px);
+    padding-left: clamp(24px, 4vw, 60px);
+    padding-right: clamp(24px, 4vw, 60px);
   }
 
   .about-team__grid {
-    grid-template-columns: repeat(2, minmax(260px, 310px));
+    grid-template-columns: repeat(2, minmax(240px, 1fr));
+    gap: clamp(12px, 2vw, 20px);
     justify-content: center;
+    width: min(100%, 980px);
+  }
+
+  .about-team__member {
+    width: 100%;
+    max-width: 310px;
   }
 
   .about-studio__grid {
     grid-template-columns: 1fr;
+    gap: clamp(28px, 4vw, 60px);
+    width: min(100%, 980px);
   }
 
   .about-studio__card {
-    width: min(100%, 920px);
+    width: min(100%, 900px);
+  }
+
+  .about-studio__subgrid {
+    grid-template-columns: repeat(2, minmax(220px, 1fr));
+  }
+
+  .subgrid__subcard {
+    width: 100%;
   }
 
   .about-header__title {
-    font-size: clamp(76px, 8vw, 113px);
-    left: clamp(160px, 30vw, 450px);
+    font-size: clamp(72px, 8vw, 113px);
+    left: clamp(120px, 24vw, 450px);
+  }
+
+  .modal__content {
+    width: min(92vw, 900px);
+    max-height: 88vh;
+    overflow-y: auto;
+  }
+
+  .modal__image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 52vh;
+    object-fit: contain;
   }
 }
 

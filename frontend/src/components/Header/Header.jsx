@@ -1,20 +1,63 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import headerLogo from '../../assets/images/white_logo.png';
 import { NavLink } from 'react-router-dom';
 
 export const Header = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const headerRef = useRef(null);
+
+  useEffect(() => {
+    if (!isMobileMenuOpen) {
+      return;
+    }
+
+    const handleOutsideClick = (event) => {
+      if (headerRef.current && !headerRef.current.contains(event.target)) {
+        setIsMobileMenuOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleOutsideClick);
+    document.addEventListener('touchstart', handleOutsideClick);
+
+    return () => {
+      document.removeEventListener('mousedown', handleOutsideClick);
+      document.removeEventListener('touchstart', handleOutsideClick);
+    };
+  }, [isMobileMenuOpen]);
+
+  const handleNavigate = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    setIsMobileMenuOpen(false);
+  };
+
   return (
-    <header className="header">
-      <img src={headerLogo} alt="Rec-On Studio Logo" />
-      <nav className="header__nav">
-        <ul className="header__nav-list_left">
+    <header className="header" ref={headerRef}>
+      <img className="header__logo" src={headerLogo} alt="Rec-On Studio Logo" />
+      <button
+        type="button"
+        className="header__menu-toggle"
+        onClick={() => setIsMobileMenuOpen((prev) => !prev)}
+        aria-expanded={isMobileMenuOpen}
+        aria-controls="main-navigation"
+        aria-label="Abrir menú de navegación"
+      >
+        <span className="header__menu-toggle-line"></span>
+        <span className="header__menu-toggle-line"></span>
+        <span className="header__menu-toggle-line"></span>
+      </button>
+      <nav
+        id="main-navigation"
+        className={`header__nav ${isMobileMenuOpen ? 'header__nav--open' : ''}`}
+      >
+        <ul className="header__nav-list_left" onClick={() => setIsMobileMenuOpen(false)}>
           <li className="header__nav-list_left-item">
             <NavLink
-              to={'/home' || '/'}
+              to="/home"
               className={({ isActive }) =>
                 isActive ? 'header__nav-list_item_bold' : ''
               }
-              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              onClick={handleNavigate}
             >
               {({ isActive }) => (
                 <div className="header__nav-list_item-container">
@@ -32,7 +75,7 @@ export const Header = () => {
               className={({ isActive }) =>
                 isActive ? 'header__nav-list_item_bold' : ''
               }
-              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              onClick={handleNavigate}
             >
               {({ isActive }) => (
                 <div className="header__nav-list_item-container">
@@ -50,7 +93,7 @@ export const Header = () => {
               className={({ isActive }) =>
                 isActive ? 'header__nav-list_item_bold' : ''
               }
-              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              onClick={handleNavigate}
             >
               {({ isActive }) => (
                 <div className="header__nav-list_item-container">
@@ -68,7 +111,7 @@ export const Header = () => {
               className={({ isActive }) =>
                 isActive ? 'header__nav-list_item_bold' : ''
               }
-              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              onClick={handleNavigate}
             >
               {({ isActive }) => (
                 <div className="header__nav-list_item-container">

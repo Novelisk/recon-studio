@@ -227,6 +227,20 @@ export const Services = () => {
           >
             &#8250;
           </button>
+          <div className="services-testimonials__controls">
+            <button
+              className="services__carousel-btn services__carousel-btn--mobile"
+              onClick={() => scroll('left')}
+            >
+              &#8249;
+            </button>
+            <button
+              className="services__carousel-btn services__carousel-btn--mobile"
+              onClick={() => scroll('right')}
+            >
+              &#8250;
+            </button>
+          </div>
         </div>
       </section>
     </>

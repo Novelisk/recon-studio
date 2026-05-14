@@ -130,9 +130,29 @@
 
   .studio_subtitle {
     font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .studio__feature {
+    margin-top: 18px;
+  }
+
+  .studio__text,
+  .studio__stat-text {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .studio__number {
+    font-size: 36px;
+  }
+
+  .studio__plus {
+    font-size: 24px;
   }
 
   .studio__stats {
+    margin-top: 20px;
     flex-direction: column;
     gap: 18px;
   }

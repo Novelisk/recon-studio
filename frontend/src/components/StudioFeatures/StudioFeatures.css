@@ -59,6 +59,11 @@
   .item__title {
     font-size: 28px;
   }
+
+  .item__paragraph {
+    font-size: 14px;
+    line-height: 1.5;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {

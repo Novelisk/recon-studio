@@ -258,7 +258,7 @@ input[type='date']::-webkit-datetime-edit {
 
   .booking-container {
     padding: 24px 16px;
-    margin-bottom: 80px;
+    margin-bottom: 0px;
     flex-direction: column;
     width: 100%;
     box-sizing: border-box;
@@ -362,25 +362,43 @@ input[type='date']::-webkit-datetime-edit {
   }
 
   .booking-container {
-    padding: clamp(60px, 12vw, 199px) clamp(28px, 8vw, 224px);
+    padding: clamp(48px, 8vw, 140px) clamp(24px, 5vw, 120px);
+    align-items: stretch;
+  }
+
+  .booking__aside {
+    width: min(46%, 520px);
+    min-width: 280px;
   }
 
   .booking-form {
-    width: min(730px, 52vw);
+    width: min(54%, 760px);
     height: auto;
+    padding: clamp(28px, 2.6vw, 50px);
+    box-sizing: border-box;
+  }
+
+  .booking-form__container {
+    width: 100%;
+    align-items: flex-start;
   }
 
   .booking-form__label {
-    width: min(310px, 23vw);
+    width: min(48%, 300px);
   }
 
   .booking-form__input {
-    width: min(310px, 23vw);
+    width: min(48%, 300px);
+    box-sizing: border-box;
   }
 
   .booking-form__input.service,
   .booking-form__input.comment {
-    width: min(640px, 48vw);
+    width: 100%;
+  }
+
+  .booking-form__button {
+    margin-top: 56px;
   }
 }
 

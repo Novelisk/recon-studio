@@ -34,16 +34,30 @@
     margin-top: 64px;
     flex-direction: column;
     gap: 24px;
+    width: 100%;
+    max-width: 100%;
     padding: 0 16px;
+    box-sizing: border-box;
+    overflow-x: hidden;
   }
 
   .albums__header {
     width: 100%;
+    max-width: 100%;
     height: auto;
+    box-sizing: border-box;
   }
 
   .albums__title {
     font-size: 34px;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .albums__description {
+    font-size: 14px;
+    line-height: 1.5;
   }
 }
 

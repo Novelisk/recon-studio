@@ -174,6 +174,25 @@ export const AlbumSlider = () => {
           alt="Right scroll button"
         />
       </button>
+
+      <div className="album-slider__controls">
+        <button
+          type="button"
+          className="album-slider__control-btn"
+          onClick={scrollLeft}
+          aria-label="Ver álbum anterior"
+        >
+          &#8249;
+        </button>
+        <button
+          type="button"
+          className="album-slider__control-btn"
+          onClick={scrollRight}
+          aria-label="Ver siguiente álbum"
+        >
+          &#8250;
+        </button>
+      </div>
     </div>
   );
 };

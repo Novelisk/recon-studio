@@ -1,4 +1,4 @@
-import React, { useState, useEffect, act } from 'react';
+import React, { useState, useEffect } from 'react';
 import { studioData } from '../../data/studioData.js';
 
 export const About = () => {
@@ -183,7 +183,7 @@ export const About = () => {
           {selectedItem && (
             <div className="modal" onClick={() => setSelectedItem(null)}>
               <div
-                className="modal-content"
+                className="modal__content"
                 onClick={(e) => e.stopPropagation()}
               >
                 <img

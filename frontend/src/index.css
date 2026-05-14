@@ -17,6 +17,13 @@
 @import url('./pages/Policy/Policy.css');
 @import url('./pages/Terms/Terms.css');
 
+html,
+body,
+#root {
+  max-width: 100%;
+  overflow-x: clip;
+}
+
 body {
   position: relative;
   margin: 0 auto;
