@@ -117,24 +117,25 @@
 
 @media (min-width: 481px) and (max-width: 768px) {
   .policy {
-    padding: 90px 24px 40px;
+    padding: 90px 24px 40px 10px;
   }
 
   .policy-header__title {
-    font-size: 40px;
+    font-size: 38px;
   }
 
   .policy-header__subtitle {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .policy-content__title {
-    font-size: 30px;
+    font-size: 26px;
   }
 
   .policy-content__paragraph,
   .policy-content__list-item {
-    font-size: 20px;
+    font-size: 16px;
+    width: 95%;
   }
 }
 

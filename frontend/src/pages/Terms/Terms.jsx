@@ -38,7 +38,7 @@ export const Terms = () => {
 
       <div className="terms-content" id="3">
         <h2 className="terms-content__title">
-          3. Reservaciones y cancelaciones
+          3. Reservaciones y cancelaciones.
         </h2>
         <ul className="terms-content__list">
           <li className="terms-content__list-item">

@@ -380,15 +380,14 @@
 @media (min-width: 481px) and (max-width: 768px) {
   .about {
     padding-top: 260px;
-    padding-left: 24px;
+    /* padding-left: 24px; */
     padding-right: 24px;
   }
 
   .about-header__title {
     left: 0;
     top: 30px;
-    width: 100%;
-    text-align: center;
+    width: 73%;
     font-size: 78px;
   }
 
@@ -403,6 +402,10 @@
     padding: 60px 0 0;
   }
 
+  .about-team__header {
+    padding-top: 80px;
+  }
+
   .about-team__grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -412,8 +415,14 @@
     max-width: 310px;
   }
 
+  .about-team__member-image {
+    height: 310px;
+    object-fit: cover;
+  }
+
   .about-studio__grid {
     grid-template-columns: 1fr;
+    gap: 0;
   }
 
   .about-studio__card {
