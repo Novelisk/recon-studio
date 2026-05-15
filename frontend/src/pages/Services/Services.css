@@ -726,27 +726,67 @@
 
 @media (min-width: 769px) and (max-width: 1440px) {
   .services {
+    padding-top: clamp(320px, 33vw, 400px);
     padding-left: clamp(20px, 4vw, 50px);
     padding-right: clamp(20px, 4vw, 50px);
   }
 
   .services__title {
-    font-size: clamp(84px, 9vw, 150px);
-    left: clamp(120px, 22vw, 410px);
+    font-size: clamp(84px, 9vw, 140px);
+    top: clamp(20px, 3vw, 50px);
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: min(90vw, 920px);
+  }
+
+  .services__image {
+    width: min(92vw, 1100px);
+    height: clamp(360px, 38vw, 504px);
+    left: 50%;
+    transform: translateX(-50%);
+    object-position: center;
   }
 
   .services-work {
+    width: 100%;
     height: auto;
+    gap: clamp(30px, 4vw, 44px);
   }
 
   .services-work__header {
-    gap: clamp(32px, 8vw, 140px);
+    width: min(100%, 1100px);
+    margin-bottom: clamp(48px, 7vw, 96px);
+    gap: clamp(24px, 4vw, 80px);
     flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .services-work__description {
+    max-width: 760px;
+    text-align: center;
   }
 
   .services-work__cards {
-    gap: clamp(24px, 5vw, 80px);
+    width: min(100%, 1100px);
+    gap: clamp(16px, 2.4vw, 34px);
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .services__card--1,
+  .services__card--2,
+  .services__card--3 {
+    width: clamp(230px, 28vw, 320px);
+    height: auto;
+    gap: 14px;
+  }
+
+  .services__card-title,
+  .services__card-description {
+    text-align: center;
   }
 
   .services__card--2 {
@@ -754,23 +794,46 @@
   }
 
   .services__stats {
+    margin-top: clamp(110px, 13vw, 200px);
+    margin-bottom: clamp(90px, 11vw, 140px);
     gap: clamp(20px, 4vw, 56px);
     flex-wrap: wrap;
     justify-content: center;
   }
 
+  .services-testimonials {
+    width: 100%;
+    overflow: hidden;
+  }
+
   .services-testimonials__content {
-    max-width: min(90vw, 1040px);
-    padding: 0 44px;
+    max-width: min(92vw, 1080px);
+    padding: 0 56px;
     box-sizing: border-box;
   }
 
   .services__carousel-btn.left {
-    left: 6px;
+    left: 12px;
   }
 
   .services__carousel-btn.right {
-    right: 6px;
+    right: 12px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1100px) {
+  .services-work__cards {
+    max-width: 760px;
+  }
+
+  .services__card--1,
+  .services__card--2,
+  .services__card--3 {
+    width: min(100%, 340px);
+  }
+
+  .services-testimonials__content {
+    padding: 0 44px;
   }
 }
 

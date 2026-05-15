@@ -25,8 +25,7 @@ export const About = () => {
   return (
     <>
       <img
-        // src="https://static.vecteezy.com/system/resources/thumbnails/036/483/161/small/ai-generated-interior-of-a-recording-studio-with-lots-of-equipment-ai-generative-photo.jpg"
-        src="https://ik.imagekit.io/novelisk/Rec-On/Rec-On%20(11%20of%2026).jpg"
+        src="https://ik.imagekit.io/novelisk/Rec-On/Rec-On%20(2%20of%2026).jpg?updatedAt=1778612563021"
         alt="Studio photo"
         className="about-header__image"
       />
@@ -50,7 +49,7 @@ export const About = () => {
           <div className="about-team__grid">
             <div className="about-team__member">
               <img
-                src="https://images.stockcake.com/public/a/1/3/a13b303a-a843-48e3-8c87-c0ac0314a282_large/intense-male-portrait-stockcake.jpg"
+                src="https://ik.imagekit.io/novelisk/Rec-On/jorge.jpg"
                 alt="Team member 1"
                 className="about-team__member-image"
               />
@@ -61,7 +60,7 @@ export const About = () => {
             </div>
             <div className="about-team__member">
               <img
-                src="https://images.stockcake.com/public/2/5/b/25b212d6-d108-450a-b6d1-d497cbe9d1e2_large/handsome-man-portrait-stockcake.jpg"
+                src="https://ik.imagekit.io/novelisk/Rec-On/juan.png"
                 alt="Team member 2"
                 className="about-team__member-image"
               />
@@ -72,7 +71,7 @@ export const About = () => {
             </div>
             <div className="about-team__member">
               <img
-                src="https://images.stockcake.com/public/6/e/5/6e533ef9-bd17-4594-9294-117b1d30afe3_large/classic-male-portrait-stockcake.jpg"
+                src="https://ik.imagekit.io/novelisk/Rec-On/luxo.png"
                 alt="Team member 3"
                 className="about-team__member-image"
               />
@@ -81,7 +80,7 @@ export const About = () => {
             </div>
             <div className="about-team__member">
               <img
-                src="https://img.freepik.com/free-photo/happy-woman-home-coronavirus-quarantine_53876-137722.jpg?semt=ais_hybrid&w=740&q=80"
+                src="https://ik.imagekit.io/novelisk/Rec-On/brenda.png"
                 alt="Team member 4"
                 className="about-team__member-image"
               />
@@ -110,7 +109,6 @@ export const About = () => {
                 onClick={() => handleClick('control')}
               >
                 <img
-                  // src="https://www.shutterstock.com/image-photo/empty-control-room-filled-buttons-600nw-2450842423.jpg"
                   src="https://ik.imagekit.io/novelisk/Rec-On/Rec-On%20(2%20of%2026).jpg"
                   alt="Control Room image"
                   className="about-studio__grid-image"
@@ -131,7 +129,7 @@ export const About = () => {
                       <img
                         src={item.image1}
                         alt={item.title}
-                        className="subcard__image"
+                        className={`subcard__image ${item.id === 1 ? 'tall-image' : ''}`}
                       />
                       <h3 className="subcard__title">{item.title}</h3>
                       <p className="subcard__description">{item.excerpt}</p>
@@ -148,7 +146,6 @@ export const About = () => {
                 onClick={() => handleClick('live')}
               >
                 <img
-                  // src="https://static.vecteezy.com/system/resources/thumbnails/071/606/027/small/a-music-room-with-purple-walls-and-musical-instruments-photo.jpg"
                   src="https://ik.imagekit.io/novelisk/Rec-On/Rec-On%20(21%20of%2026).jpg"
                   alt="Live Room image"
                   className="about-studio__grid-image"
@@ -169,7 +166,7 @@ export const About = () => {
                       <img
                         src={item.image1}
                         alt={item.title}
-                        className="subcard__image"
+                        className={`subcard__image ${item.id === 4 || item.id === 3 ? 'tall-image' : ''}`}
                       />
                       <h3 className="subcard__title">{item.title}</h3>
                       <p className="subcard__description">{item.excerpt}</p>

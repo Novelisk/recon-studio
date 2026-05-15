@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { SocialsPopup } from '../SocialsPopup/SocialsPopup';
-import rightBtn from '../../assets/images/right_button_icon.png';
-import leftBtn from '../../assets/images/left_button_icon.png';
+import rightBtn from '../../assets/images/icon-arrow-right.svg';
+import leftBtn from '../../assets/images/icon-arrow-left.svg';
 
 const albumList = [
   {

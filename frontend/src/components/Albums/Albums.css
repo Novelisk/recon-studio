@@ -94,8 +94,21 @@
 
 @media (min-width: 769px) and (max-width: 1440px) {
   .albums {
+    width: 100%;
+    max-width: 100%;
     gap: clamp(24px, 4vw, 80px);
     padding: 0 clamp(20px, 4vw, 60px);
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .albums__header {
+    width: min(100%, 360px);
+    height: auto;
+  }
+
+  .albums__title {
+    overflow-wrap: anywhere;
   }
 }
 

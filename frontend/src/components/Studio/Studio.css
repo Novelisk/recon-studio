@@ -189,6 +189,18 @@
 }
 
 @media (min-width: 769px) and (max-width: 1440px) {
+  .studio {
+    padding: 0 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .studio-content {
+    flex-direction: row;
+    gap: 40px;
+  }
+
   .studio__title,
   .studio_subtitle {
     width: min(800px, 52vw);

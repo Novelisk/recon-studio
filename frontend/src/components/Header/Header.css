@@ -12,7 +12,9 @@
 
 .header__logo {
   width: 154px;
-  height: 52px;
+  height: 80px;
+  object-fit: cover;
+  align-self: center;
 }
 
 .header__menu-toggle {

@@ -4,7 +4,7 @@
   align-items: center;
   background-color: #b5b5b5;
   background-image: url('https://ik.imagekit.io/novelisk/Rec-On/Rec-On%20(24%20of%2026).jpg');
-  background-size: 92%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }

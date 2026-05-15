@@ -195,10 +195,17 @@
 }
 
 @media (min-width: 769px) and (max-width: 1440px) {
+  .services-modal {
+    width: 100%;
+    overflow: hidden;
+  }
+
   .services-modal__tabs {
+    width: 100%;
     gap: clamp(12px, 2vw, 24px);
     padding: clamp(20px, 2.5vw, 40px) clamp(16px, 3vw, 40px) 0;
     justify-content: center;
+    box-sizing: border-box;
   }
 
   .services-modal__tab-title {
@@ -213,8 +220,9 @@
   .services-modal__card {
     left: clamp(16px, 5vw, 60px);
     right: clamp(16px, 5vw, 60px);
-    max-width: min(550px, 70vw);
+    max-width: min(550px, 72vw);
     padding: clamp(20px, 2.4vw, 40px);
+    box-sizing: border-box;
   }
 }
 

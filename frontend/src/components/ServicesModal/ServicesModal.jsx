@@ -11,7 +11,7 @@ const SERVICES = {
     title: 'Track Mastering',
     description:
       'Mejora y pulido de tus proyectos de audio para lograr un sonido profesional. Nuestro equipo de maestros expertos garantiza que tu música suene perfecta en cualquier dispositivo.',
-    image: 'https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2',
+    image: 'https://ik.imagekit.io/novelisk/Rec-On/track_mastering_hd.jpeg',
   },
   editing: {
     title: 'Audio Editing',

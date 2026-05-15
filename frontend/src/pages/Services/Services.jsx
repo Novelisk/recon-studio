@@ -26,7 +26,7 @@ export const Services = () => {
     <>
       <h1 className="services__title">Servicios</h1>
       <img
-        src="https://ik.imagekit.io/novelisk/Rec-On/Rec-On%20(2%20of%2026).jpg?updatedAt=1778612563021"
+        src="https://ik.imagekit.io/novelisk/Rec-On/Rec-On%20(11%20of%2026).jpg"
         alt="Services title"
         className="services__image"
       />

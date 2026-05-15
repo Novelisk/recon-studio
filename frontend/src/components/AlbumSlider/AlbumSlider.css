@@ -9,7 +9,6 @@
 .album-slider__container {
   margin: 0;
   display: flex;
-  gap: 24px;
   align-items: center;
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -62,17 +61,22 @@
 .album-slider__btn-left,
 .album-slider__btn-right {
   margin: 0;
+  padding: 4px;
   transform: translateY(-50%);
   background: #cfba82;
   border: none;
   opacity: 90%;
-  width: 35px;
-  height: 35px;
+  width: 28px;
+  height: 28px;
   border-radius: 50px;
   font-size: 24px;
   cursor: pointer;
   z-index: 2;
   transition: transform 0.2s ease;
+}
+
+.album-slider__btn-right {
+  margin-left: 18px;
 }
 
 .album-slider__btn-left:hover,
@@ -245,6 +249,14 @@
 
   .album-slider__container {
     width: min(100%, calc((310px + 24px) * 3));
+    max-width: 100%;
+  }
+
+  .album-slider__btn-left,
+  .album-slider__btn-right {
+    width: 32px;
+    height: 32px;
+    font-size: 20px;
   }
 }
 
