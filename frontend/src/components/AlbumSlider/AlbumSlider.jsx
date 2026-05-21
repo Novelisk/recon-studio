@@ -1,131 +1,19 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect, useCallback } from 'react';
 import { SocialsPopup } from '../SocialsPopup/SocialsPopup';
 import rightBtn from '../../assets/images/icon-arrow-right.svg';
 import leftBtn from '../../assets/images/icon-arrow-left.svg';
-
-const albumList = [
-  {
-    id: 1,
-    title: 'Dark Side Of The Moon',
-    artist: 'Pink Floyd',
-    image: 'https://i.scdn.co/image/ab67616d0000b273db216ca805faf5fe35df4ee6',
-    links: {
-      instagram: '#',
-      facebook: '#',
-      spotify: '#',
-      bandcamp: '#',
-    },
-  },
-  {
-    id: 2,
-    title: 'Nirvana',
-    artist: 'Nevermind',
-    image:
-      'https://m.media-amazon.com/images/I/61ZhsEYnSdL._UF1000,1000_QL80_.jpg',
-    links: {
-      instagram: '#',
-      facebook: '#',
-      spotify: '#',
-      bandcamp: '#',
-    },
-  },
-  {
-    id: 3,
-    title: 'Metallica',
-    artist: 'The Black Album',
-    image:
-      'https://www.excelsior.com.mx/800x600/filters:format(webp):quality(75)/media/pictures/2016/08/11/1500102.jpg',
-    links: {
-      instagram: '#',
-      facebook: '#',
-      spotify: '#',
-      bandcamp: '#',
-    },
-  },
-  {
-    id: 4,
-    title: 'Album 4 title',
-    artist: 'Artist 4',
-    image: null,
-    links: {
-      instagram: null,
-      facebook: null,
-      spotify: null,
-      bandcamp: null,
-    },
-  },
-  {
-    id: 5,
-    title: 'Album 5 title',
-    artist: 'Artist 5',
-    image: null,
-    links: {
-      instagram: null,
-      facebook: null,
-      spotify: null,
-      bandcamp: null,
-    },
-  },
-  {
-    id: 6,
-    title: 'Album 6 title',
-    artist: 'Artist 6',
-    image: null,
-    links: {
-      instagram: null,
-      facebook: null,
-      spotify: null,
-      bandcamp: null,
-    },
-  },
-  {
-    id: 7,
-    title: 'Album 7 title',
-    artist: 'Artist 7',
-    image: null,
-    links: {
-      instagram: null,
-      facebook: null,
-      spotify: null,
-      bandcamp: null,
-    },
-  },
-  {
-    id: 8,
-    title: 'Album 8 title',
-    artist: 'Artist 8',
-    image: null,
-    links: {
-      instagram: null,
-      facebook: null,
-      spotify: null,
-      bandcamp: null,
-    },
-  },
-  {
-    id: 9,
-    title: 'Album 9 title',
-    artist: 'Artist 9',
-    image: null,
-    links: {
-      instagram: null,
-      facebook: null,
-      spotify: null,
-      bandcamp: null,
-    },
-  },
-];
+import albumList from '../../data/albumList';
 
 export const AlbumSlider = () => {
   const sliderRef = useRef(null);
   const cardRef = useRef(null);
+  const intervalRef = useRef(null);
 
   const scrollByCard = (direction) => {
     if (!sliderRef.current || !cardRef.current) return;
     const cardWidth = cardRef.current.offsetWidth;
     const styles = window.getComputedStyle(sliderRef.current);
     const gap = parseInt(styles.gap) || 0;
-
     const totalSlide = cardWidth + gap;
 
     sliderRef.current.scrollBy({
@@ -134,11 +22,42 @@ export const AlbumSlider = () => {
     });
   };
 
-  const scrollRight = () => scrollByCard(1);
+  const scrollRight = useCallback(() => {
+    if (!sliderRef.current || !cardRef.current) return;
+    const { scrollLeft, scrollWidth, clientWidth } = sliderRef.current;
+    const isAtEnd = scrollLeft + clientWidth >= scrollWidth - 1;
+
+    if (isAtEnd) {
+      sliderRef.current.scrollTo({ left: 0, behavior: 'smooth' });
+    } else {
+      scrollByCard(1);
+    }
+  }, []);
+
   const scrollLeft = () => scrollByCard(-1);
 
+  const startAutoScroll = useCallback(() => {
+    intervalRef.current = setInterval(scrollRight, 3000);
+  }, [scrollRight]);
+
+  const stopAutoScroll = () => {
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
+      intervalRef.current = null;
+    }
+
+    useEffect(() => {
+      startAutoScroll();
+      return () => stopAutoScroll();
+    }, [startAutoScroll]);
+  };
+
   return (
-    <div className="album-slider">
+    <div
+      className="album-slider"
+      onMouseEnter={stopAutoScroll}
+      onMouseLeave={startAutoScroll}
+    >
       <button type="button" className="album-slider__btn" onClick={scrollLeft}>
         <img
           className="album-slider__btn-left"
