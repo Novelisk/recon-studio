@@ -33,20 +33,20 @@ export const studioData = {
         'Cabezal para bajo Darkglass Microtubes 900',
       ],
     },
-    {
-      id: 3,
-      title: 'Pedales',
-      image1:
-        'https://ik.imagekit.io/novelisk/Rec-On/Rec-On%20(8%20of%2026).jpg?tr=w-1200,q-75,f-webp',
-      image2:
-        'https://ik.imagekit.io/novelisk/Rec-On/Rec-On%20(6%20of%2026).jpg?updatedAt=1778612563976&tr=w-1200,q-75,f-webp',
-      excerpt: 'Pedales Boss...',
-      content: 'Pedales Boss...',
-      features: [
-        'Pedales de efectos Boss',
-        'Distorsión, delay, reverb, chorus, etc.',
-      ],
-    },
+    // {
+    //   id: 3,
+    //   title: 'Pedales',
+    //   image1:
+    //     'https://ik.imagekit.io/novelisk/Rec-On/Rec-On%20(8%20of%2026).jpg?tr=w-1200,q-75,f-webp',
+    //   image2:
+    //     'https://ik.imagekit.io/novelisk/Rec-On/Rec-On%20(6%20of%2026).jpg?updatedAt=1778612563976&tr=w-1200,q-75,f-webp',
+    //   excerpt: 'Pedales Boss...',
+    //   content: 'Pedales Boss...',
+    //   features: [
+    //     'Pedales de efectos Boss',
+    //     'Distorsión, delay, reverb, chorus, etc.',
+    //   ],
+    // },
   ],
 
   live: [
