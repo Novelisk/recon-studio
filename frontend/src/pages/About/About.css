@@ -322,6 +322,11 @@
     height: auto;
   }
 
+  .about-team__member-role {
+    margin-top: -15px;
+    margin-bottom: 15px;
+  }
+
   .about-studio__grid {
     grid-template-columns: 1fr;
     gap: 32px;
