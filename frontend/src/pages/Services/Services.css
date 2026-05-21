@@ -346,17 +346,18 @@
 }
 
 .services__testimonial-title {
-  font-size: 24px;
+  font-size: 22px;
   color: #b5b5b5;
   max-width: 250px;
-  line-height: 1.5;
+  line-height: 1.25;
 }
 
 .services__testimonial-text {
   font-size: 12px;
   font-style: italic;
   color: #fff;
-  max-width: 250px;
+  max-width: 100%;
+  width: 95%;
 }
 
 .services__testimonial-quote-icon {
@@ -539,10 +540,7 @@
   }
 
   .services__testimonial {
-    width: 280px;
-    min-width: 280px;
-    flex: 0 0 280px;
-    max-width: 280px;
+    width: 350px;
     height: auto;
     margin: 0 auto;
     padding: 20px;
