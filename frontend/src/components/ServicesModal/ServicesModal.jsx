@@ -5,33 +5,42 @@ const SERVICES = {
     title: 'Voice Recording',
     description:
       'Grabación de voces para tus proyectos de audio. Ya sea para podcasts, audiolibros o cualquier otro proyecto que requiera voces claras y profesionales, nuestro servicio de grabación de voces está aquí para ayudarte a dar vida a tus ideas.',
-    image: 'https://ik.imagekit.io/novelisk/Rec-On/voice-recording.png',
+    image:
+      'https://ik.imagekit.io/novelisk/Rec-On/voice-recording.png?tr=w-1200,q-75,f-webp',
   },
   mastering: {
     title: 'Track Mastering',
     description:
       'Mejora y pulido de tus proyectos de audio para lograr un sonido profesional. Nuestro equipo de maestros expertos garantiza que tu música suene perfecta en cualquier dispositivo.',
-    image: 'https://ik.imagekit.io/novelisk/Rec-On/track_mastering_hd.jpeg',
+    image:
+      'https://ik.imagekit.io/novelisk/Rec-On/track_mastering_hd.jpeg?tr=w-1200,q-75,f-webp',
   },
   editing: {
     title: 'Audio Editing',
     description:
       'Edición de audio para mejorar la calidad y la claridad de tus grabaciones. Nuestro servicio de edición de audio se encarga de eliminar ruidos no deseados, ajustar niveles y mejorar la calidad general de tu audio.',
     image:
-      'https://ik.imagekit.io/novelisk/Rec-On/Rec-On%20(12%20of%2026).jpg?updatedAt=1778612559658',
+      'https://ik.imagekit.io/novelisk/Rec-On/Rec-On%20(12%20of%2026).jpg?updatedAt=1778612559658&tr=w-1200,q-75,f-webp',
   },
   mixing: {
     title: 'Track Mixing',
     description:
       'Mezcla de pistas para lograr un sonido equilibrado y profesional. Nos aseguramos de que cada elemento de tu música se mezcle perfectamente para crear una experiencia auditiva excepcional.',
     image:
-      'https://ik.imagekit.io/novelisk/Rec-On/Rec-On%20(10%20of%2026).jpg?updatedAt=1778612562264',
+      'https://ik.imagekit.io/novelisk/Rec-On/Rec-On%20(10%20of%2026).jpg?updatedAt=1778612562264&tr=w-1200,q-75,f-webp',
   },
   recording: {
     title: 'Track Recording',
     description:
       'Grabación de pistas únicas o en conjunto con el mejor equipo de grabación. Nuestro servicio de grabación de pistas te permite capturar cada detalle de tu música con la más alta calidad, ya sea que estés grabando instrumentos, voces o cualquier otro elemento musical.',
-    image: 'https://ik.imagekit.io/novelisk/Rec-On/track-recording.png',
+    image:
+      'https://ik.imagekit.io/novelisk/Rec-On/track_recording2.jpg?q-75,f-webp',
+  },
+  rehearsal: {
+    title: 'Sala de ensayos',
+    description:
+      'Contamos con una sala de ensayos completamente equipada para que puedas practicar y preparar tus presentaciones en vivo. Nuestra sala de ensayos ofrece un ambiente cómodo y profesional para que puedas concentrarte en tu música y mejorar tus habilidades.',
+    image: 'https://cdn.mos.cms.futurecdn.net/sLJnsjvf6zACPou8FEb4i5.jpg',
   },
 };
 

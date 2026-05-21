@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   background-color: #b5b5b5;
-  background-image: url('https://ik.imagekit.io/novelisk/Rec-On/Rec-On%20(24%20of%2026).jpg');
+  background-image: url('https://ik.imagekit.io/novelisk/Rec-On/hero_header_image2.jpg?q-75,f-webp ');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -52,8 +52,11 @@
 }
 
 @media (min-width: 1441px) and (max-width: 2560px) {
+  .hero {
+    height: 100vh;
+  }
   .hero__title {
-    font-size: 96px;
+    font-size: 48px;
     margin-left: 12vw;
   }
 }

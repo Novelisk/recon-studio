@@ -25,7 +25,7 @@ export const About = () => {
   return (
     <>
       <img
-        src="https://ik.imagekit.io/novelisk/Rec-On/Rec-On%20(2%20of%2026).jpg?updatedAt=1778612563021"
+        src="https://ik.imagekit.io/novelisk/Rec-On/Rec-On%20(2%20of%2026).jpg?updatedAt=1778612563021&tr=w-1200,q-75,f-webp"
         alt="Studio photo"
         className="about-header__image"
       />
@@ -49,7 +49,7 @@ export const About = () => {
           <div className="about-team__grid">
             <div className="about-team__member">
               <img
-                src="https://ik.imagekit.io/novelisk/Rec-On/jorge.jpg"
+                src="https://ik.imagekit.io/novelisk/Rec-On/jorge.jpg?updatedAt=1778874596363&tr=w-1200,q-75,f-webp"
                 alt="Team member 1"
                 className="about-team__member-image"
               />
@@ -60,7 +60,7 @@ export const About = () => {
             </div>
             <div className="about-team__member">
               <img
-                src="https://ik.imagekit.io/novelisk/Rec-On/juan.png"
+                src="https://ik.imagekit.io/novelisk/Rec-On/juan.png?q-75,f-webp"
                 alt="Team member 2"
                 className="about-team__member-image"
               />
@@ -71,7 +71,7 @@ export const About = () => {
             </div>
             <div className="about-team__member">
               <img
-                src="https://ik.imagekit.io/novelisk/Rec-On/luxo.png"
+                src="https://ik.imagekit.io/novelisk/Rec-On/luxo.png?q-75,f-webp"
                 alt="Team member 3"
                 className="about-team__member-image"
               />
@@ -80,7 +80,7 @@ export const About = () => {
             </div>
             <div className="about-team__member">
               <img
-                src="https://ik.imagekit.io/novelisk/Rec-On/brenda.png"
+                src="https://ik.imagekit.io/novelisk/Rec-On/brenda.png?q-75,f-webp"
                 alt="Team member 4"
                 className="about-team__member-image"
               />
@@ -109,7 +109,7 @@ export const About = () => {
                 onClick={() => handleClick('control')}
               >
                 <img
-                  src="https://ik.imagekit.io/novelisk/Rec-On/Rec-On%20(2%20of%2026).jpg"
+                  src="https://ik.imagekit.io/novelisk/Rec-On/Rec-On%20(2%20of%2026).jpg?updatedAt=1778874596363&tr=w-1200,q-75,f-webp"
                   alt="Control Room image"
                   className="about-studio__grid-image"
                 />
@@ -146,7 +146,7 @@ export const About = () => {
                 onClick={() => handleClick('live')}
               >
                 <img
-                  src="https://ik.imagekit.io/novelisk/Rec-On/Rec-On%20(21%20of%2026).jpg"
+                  src="https://ik.imagekit.io/novelisk/Rec-On/Rec-On%20(21%20of%2026).jpg?tr=w-1200,q-75,f-webp"
                   alt="Live Room image"
                   className="about-studio__grid-image"
                 />
