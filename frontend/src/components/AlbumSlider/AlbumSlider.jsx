@@ -36,21 +36,22 @@ export const AlbumSlider = () => {
 
   const scrollLeft = () => scrollByCard(-1);
 
-  const startAutoScroll = useCallback(() => {
-    intervalRef.current = setInterval(scrollRight, 3000);
-  }, [scrollRight]);
-
-  const stopAutoScroll = () => {
+  const stopAutoScroll = useCallback(() => {
     if (intervalRef.current) {
       clearInterval(intervalRef.current);
       intervalRef.current = null;
     }
+  }, []);
 
-    useEffect(() => {
-      startAutoScroll();
-      return () => stopAutoScroll();
-    }, [startAutoScroll]);
-  };
+  const startAutoScroll = useCallback(() => {
+    stopAutoScroll();
+    intervalRef.current = setInterval(scrollRight, 3000);
+  }, [scrollRight, stopAutoScroll]);
+
+  useEffect(() => {
+    startAutoScroll();
+    return () => stopAutoScroll();
+  }, [startAutoScroll, stopAutoScroll]);
 
   return (
     <div

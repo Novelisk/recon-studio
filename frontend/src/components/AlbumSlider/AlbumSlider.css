@@ -10,9 +10,17 @@
   margin: 0;
   display: flex;
   align-items: center;
-  overflow-x: hidden;
+  overflow-x: auto;
   scroll-behavior: smooth;
   width: calc((310px + 24px) * 3);
+
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.album-slider__container::-webkit-scrollbar {
+  display: none;
 }
 
 .album-slider__controls {
@@ -27,7 +35,8 @@
   color: inherit;
   flex-shrink: 0;
   transition: transform 0.25s ease;
-  cursor: pointer;
+
+  scroll-snap-align: start;
 }
 
 .album:hover {
@@ -91,13 +100,13 @@
     box-sizing: border-box;
     flex-direction: column;
     gap: 10px;
-    overflow: hidden;
+    overflow: auto;
   }
 
   .album-slider__container {
     width: 100%;
     max-width: 100%;
-    overflow-x: hidden;
+    overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-padding-inline: calc((100% - 300px) / 2);
     gap: 0;
