@@ -189,6 +189,8 @@
 
 .services-testimonials {
   position: relative;
+  padding: 0 50px 0 50px;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -255,6 +257,7 @@
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  border: none;
   background-color: rgba(255, 255, 255, 0.6);
   color: #fff;
   font-size: 18px;
@@ -273,11 +276,11 @@
 }
 
 .services__carousel-btn.left {
-  left: -50px;
+  left: -10px;
 }
 
 .services__carousel-btn.right {
-  right: -50px;
+  right: -10px;
 }
 
 .services__testimonial {
@@ -821,21 +824,31 @@
 
   .services-testimonials {
     width: 100%;
-    overflow: hidden;
   }
 
   .services-testimonials__content {
     max-width: min(92vw, 1080px);
     padding: 0 56px;
     box-sizing: border-box;
+    overflow: hidden;
   }
 
   .services__carousel-btn.left {
-    left: 12px;
+    left: 100px;
   }
 
   .services__carousel-btn.right {
-    right: 12px;
+    right: 100px;
+  }
+}
+
+@media (min-width: 1339px) and (max-width: 1440px) {
+  .services__carousel-btn.left {
+    left: 10%;
+  }
+
+  .services__carousel-btn.right {
+    right: 10%;
   }
 }
 
