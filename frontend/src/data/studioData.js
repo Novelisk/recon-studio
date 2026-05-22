@@ -54,9 +54,9 @@ export const studioData = {
       id: 1,
       title: 'Set Batería 1',
       image1:
-        'https://ik.imagekit.io/novelisk/Rec-On/Rec-On%20(13%20of%2026).jpg?updatedAt=1778612562613&tr=w-1200,q-75,f-webp',
-      image2:
-        'https://ik.imagekit.io/novelisk/Rec-On/Rec-On%20(14%20of%2026).jpg?updatedAt=1778612562613&tr=w-1200,q-75,f-webp',
+      'https://ik.imagekit.io/novelisk/Rec-On/Rec-On%20(15%20of%2026).jpg?updatedAt=1778612565722&tr=w-1200,q-75,f-webp',
+    image2:
+      'https://ik.imagekit.io/novelisk/Rec-On/Rec-On%20(16%20of%2026).jpg?updatedAt=1778612565722&tr=w-1200,q-75,f-webp',
       excerpt: 'Batería Ludwig Accent',
       content:
         'Set de batería Ludwig Accent para grabación y presentaciones en vivo',
@@ -71,10 +71,11 @@ export const studioData = {
     {
       id: 2,
       title: 'Set Batería 2',
-      image1:
-        'https://ik.imagekit.io/novelisk/Rec-On/Rec-On%20(15%20of%2026).jpg?updatedAt=1778612565722&tr=w-1200,q-75,f-webp',
+     
+        image1:
+        'https://ik.imagekit.io/novelisk/Rec-On/Rec-On%20(13%20of%2026).jpg?updatedAt=1778612562613&tr=w-1200,q-75,f-webp',
       image2:
-        'https://ik.imagekit.io/novelisk/Rec-On/Rec-On%20(16%20of%2026).jpg?updatedAt=1778612565722&tr=w-1200,q-75,f-webp',
+        'https://ik.imagekit.io/novelisk/Rec-On/Rec-On%20(14%20of%2026).jpg?updatedAt=1778612562613&tr=w-1200,q-75,f-webp',
       excerpt: "Batería Ludwig 70's Shellpack",
       content:
         "Set de batería Ludwig 70's Shellpack para grabación y presentaciones en vivo",

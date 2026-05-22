@@ -55,7 +55,7 @@ export const About = () => {
               />
               <h3 className="about-team__member-name">Jorge Trejo</h3>
               <p className="about-team__member-role">
-                Recording & Mixing Engineer
+                Ingeniero de Grabación y Mezcla
               </p>
             </div>
             <div className="about-team__member">
@@ -66,7 +66,7 @@ export const About = () => {
               />
               <h3 className="about-team__member-name">Juan Puget</h3>
               <p className="about-team__member-role">
-                Mixing & Mastering Engineer
+                Ingeniero de Master y Mezcla
               </p>
             </div>
             <div className="about-team__member">
@@ -76,7 +76,7 @@ export const About = () => {
                 className="about-team__member-image"
               />
               <h3 className="about-team__member-name">Luxo López</h3>
-              <p className="about-team__member-role">ADR | Sound Engineer</p>
+              <p className="about-team__member-role">ADR | Ingeniero de Sonido</p>
             </div>
             <div className="about-team__member">
               <img
@@ -85,7 +85,7 @@ export const About = () => {
                 className="about-team__member-image"
               />
               <h3 className="about-team__member-name">Brenda Peña</h3>
-              <p className="about-team__member-role">Producer</p>
+              <p className="about-team__member-role">Productora</p>
             </div>
           </div>
         </div>
