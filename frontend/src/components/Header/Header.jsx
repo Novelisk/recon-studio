@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import headerLogo from '../../assets/images/white_logo.png';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 export const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -33,7 +33,9 @@ export const Header = () => {
 
   return (
     <header className="header" ref={headerRef}>
+    <Link to='/home'>
       <img className="header__logo" src={headerLogo} alt="Rec-On Studio Logo" />
+    </Link>
       <button
         type="button"
         className="header__menu-toggle"
