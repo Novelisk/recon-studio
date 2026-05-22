@@ -289,7 +289,7 @@
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
 
   padding: 30px;
   gap: 20px;
@@ -358,6 +358,26 @@
   color: #fff;
   max-width: 100%;
   width: 95%;
+  flex-grow: 1;
+  overflow: auto;
+
+  /* Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: #cfab82 transparent;
+}
+
+.services__testimonial-text::-webkit-scrollbar {
+  width: 4px;
+  color: #cfab82;
+}
+
+.services__testimonial-text::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.services__testimonial-text::-webkit-scrollbar-thumb {
+  background-color: #f5a623;
+  border-radius: 10px;
 }
 
 .services__testimonial-quote-icon {
