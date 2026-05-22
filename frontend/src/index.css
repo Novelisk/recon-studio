@@ -24,6 +24,24 @@ body,
   overflow-x: clip;
 }
 
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #cfab82 transparent;
+}
+
+html::-webkit-scrollbar {
+  width: 6px;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #f5a623;
+  border-radius: 10px;
+}
+
 body {
   position: relative;
   margin: 0 auto;
