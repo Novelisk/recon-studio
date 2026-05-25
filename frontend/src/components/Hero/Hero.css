@@ -56,8 +56,9 @@
     height: 100vh;
   }
   .hero__title {
-    font-size: 48px;
+    font-size: 80px;
     margin-left: 12vw;
+    margin-top: 20vh;
   }
 }
 
@@ -65,5 +66,12 @@
   .hero__title {
     font-size: 120px;
     margin-left: 14vw;
+  }
+}
+
+@media (min-width: 2561px) and (max-width: 5120px) {
+  .hero__title {
+    font-size: 120px;
+    margin-left: 10vw;
   }
 }

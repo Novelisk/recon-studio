@@ -190,7 +190,7 @@
 .services-testimonials {
   position: relative;
   padding: 0 50px 0 50px;
-  
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -869,6 +869,12 @@
 }
 
 @media (min-width: 1441px) and (max-width: 2560px) {
+  .services__title {
+    font-size: 120px;
+    left: 30%;
+    margin-bottom: 60px;
+  }
+
   .services-testimonials__content {
     max-width: 72vw;
   }
@@ -877,5 +883,13 @@
 @media (min-width: 2561px) {
   .services-testimonials__content {
     max-width: 1800px;
+  }
+}
+
+@media (min-width: 2561px) and (max-width: 5120px) {
+  .services__title {
+    font-size: 120px;
+    left: 35%;
+    margin-bottom: 60px;
   }
 }

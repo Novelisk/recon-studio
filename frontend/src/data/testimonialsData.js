@@ -64,16 +64,20 @@ const TESTIMONIALS = [
     name: 'Jorge Veliz',
     role: 'Cliente',
     title: 'Un estudio 10/10.',
-    content: 'Las instalaciones están buenísimas, cuentan con instrumentos, diferentes tipos de micrófonos y todo un equipo necesario y óptimo para crear buena música y hasta poder ensayar. La atención, la vibra y el lugar, muy recomendado.',
-    portrait: 'https://ik.imagekit.io/novelisk/Rec-On/testimonials-portraits/jorge_veliz.jpeg',
+    content:
+      'Las instalaciones están buenísimas, cuentan con instrumentos, diferentes tipos de micrófonos y todo un equipo necesario y óptimo para crear buena música y hasta poder ensayar. La atención, la vibra y el lugar, muy recomendado.',
+    portrait:
+      'https://ik.imagekit.io/novelisk/Rec-On/testimonials-portraits/jorge_veliz.jpeg',
   },
   {
     id: 8,
     name: 'Frutas de Venus',
     role: 'Cliente',
-    title: 'Profesionalis y gran trabajo.',
-    content: 'En 2025 grabamos nuestro EP debut en REC-ON Studio, un estudio que desde hace tiempo nos llamaba la atención debido a que varias bandas de rock de la CDMX han trabajado ahí. Tener la oportunidad de grabar nuestro primer material de estudio en ese lugar fue una gran experiencia. Quedamos completamente satisfechos con la calidad del trabajo, el trato recibido y la relación calidad-precio. Además de llevarnos un excelente resultado, también nos llevamos una amistad. Agradecemos especialmente a Jorge Trejo por su profesionalismo y el gran trabajo realizado.',
-    portrait: 'https://ik.imagekit.io/novelisk/Rec-On/testimonials-portraits/frutas_de_venus.jpeg',
+    title: 'Profesionales y gran trabajo.',
+    content:
+      'En 2025 grabamos nuestro EP debut en REC-ON Studio, un estudio que desde hace tiempo nos llamaba la atención debido a que varias bandas de rock de la CDMX han trabajado ahí. Tener la oportunidad de grabar nuestro primer material de estudio en ese lugar fue una gran experiencia. Quedamos completamente satisfechos con la calidad del trabajo, el trato recibido y la relación calidad-precio. Además de llevarnos un excelente resultado, también nos llevamos una amistad. Agradecemos especialmente a Jorge Trejo por su profesionalismo y el gran trabajo realizado.',
+    portrait:
+      'https://ik.imagekit.io/novelisk/Rec-On/testimonials-portraits/frutas_de_venus.jpeg',
   },
   // {
   //   id: null,
