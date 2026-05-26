@@ -54,9 +54,9 @@ export const studioData = {
       id: 1,
       title: 'Set Batería 1',
       image1:
-      'https://ik.imagekit.io/novelisk/Rec-On/Rec-On%20(15%20of%2026).jpg?updatedAt=1778612565722&tr=w-1200,q-75,f-webp',
-    image2:
-      'https://ik.imagekit.io/novelisk/Rec-On/Rec-On%20(16%20of%2026).jpg?updatedAt=1778612565722&tr=w-1200,q-75,f-webp',
+        'https://ik.imagekit.io/novelisk/Rec-On/Rec-On%20(15%20of%2026).jpg?updatedAt=1778612565722&tr=w-1200,q-75,f-webp',
+      image2:
+        'https://ik.imagekit.io/novelisk/Rec-On/Rec-On%20(16%20of%2026).jpg?updatedAt=1778612565722&tr=w-1200,q-75,f-webp',
       excerpt: 'Batería Ludwig Accent',
       content:
         'Set de batería Ludwig Accent para grabación y presentaciones en vivo',
@@ -71,8 +71,8 @@ export const studioData = {
     {
       id: 2,
       title: 'Set Batería 2',
-     
-        image1:
+
+      image1:
         'https://ik.imagekit.io/novelisk/Rec-On/Rec-On%20(13%20of%2026).jpg?updatedAt=1778612562613&tr=w-1200,q-75,f-webp',
       image2:
         'https://ik.imagekit.io/novelisk/Rec-On/Rec-On%20(14%20of%2026).jpg?updatedAt=1778612562613&tr=w-1200,q-75,f-webp',
@@ -148,9 +148,9 @@ export const studioData = {
       id: 7,
       title: 'Combo Bajo',
       image1:
-        'https://ik.imagekit.io/novelisk/Rec-On/IMG_3824-7.jpg?tr=w-1200,q-75,f-webp',
+        'https://ik.imagekit.io/novelisk/Rec-On/combo_bajo.jpg?tr=w-1200,q-75,f-webp',
       image2:
-        'https://ik.imagekit.io/novelisk/Rec-On/IMG_3824-7.jpg?tr=w-1200,q-75,f-webp',
+        'https://ik.imagekit.io/novelisk/Rec-On/combo_bajo.jpg?tr=w-1200,q-75,f-webp',
       excerpt: 'Combo Hartke HA2500',
       content: 'Hartke - Combo cabezal y gabinete para bajo"',
       features: [
@@ -162,9 +162,9 @@ export const studioData = {
       id: 8,
       title: 'Microfonía',
       image1:
-        'https://ik.imagekit.io/novelisk/Rec-On/IMG_3829-8.jpg?tr=w-1200,q-75,f-webp',
+        'https://ik.imagekit.io/novelisk/Rec-On/microfonia1.jpg?tr=w-1200,q-75,f-webp',
       image2:
-        'https://ik.imagekit.io/novelisk/Rec-On/IMG_3829-8.jpg?tr=w-1200,q-75,f-webp',
+        'https://ik.imagekit.io/novelisk/Rec-On/microfonia2.jpg?tr=w-1200,q-75,f-webp',
       excerpt: 'Micrófonos',
       content: 'Colección de micrófonos para grabación y amplificación en vivo',
       features: [

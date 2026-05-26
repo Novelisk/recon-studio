@@ -13,7 +13,7 @@ const SERVICES = {
     description:
       'Mejora y pulido de tus proyectos de audio para lograr un sonido profesional. Nuestro equipo de maestros expertos garantiza que tu música suene perfecta en cualquier dispositivo.',
     image:
-      'https://ik.imagekit.io/novelisk/Rec-On/track_mastering_hd.jpeg?tr=w-1200,q-75,f-webp',
+      'https://ik.imagekit.io/novelisk/Rec-On/track_mastering.jpg?tr=w-1200,q-75,f-webp',
   },
   editing: {
     title: 'Audio Editing',
@@ -27,7 +27,8 @@ const SERVICES = {
     description:
       'Mezcla de pistas para lograr un sonido equilibrado y profesional. Nos aseguramos de que cada elemento de tu música se mezcle perfectamente para crear una experiencia auditiva excepcional.',
     image:
-      'https://ik.imagekit.io/novelisk/Rec-On/Rec-On%20(10%20of%2026).jpg?updatedAt=1778612562264&tr=w-1200,q-75,f-webp',
+      // 'https://ik.imagekit.io/novelisk/Rec-On/track_mixing.jpg?tr=w-1200,q-75,f-webp',
+      'https://ik.imagekit.io/novelisk/Rec-On/track_mixing2.jpg?tr=w-1200,q-75,f-webp',
   },
   recording: {
     title: 'Track Recording',

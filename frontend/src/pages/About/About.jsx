@@ -76,7 +76,9 @@ export const About = () => {
                 className="about-team__member-image"
               />
               <h3 className="about-team__member-name">Luxo López</h3>
-              <p className="about-team__member-role">ADR | Ingeniero de Sonido</p>
+              <p className="about-team__member-role">
+                ADR | Ingeniero de Sonido
+              </p>
             </div>
             <div className="about-team__member">
               <img
@@ -166,7 +168,7 @@ export const About = () => {
                       <img
                         src={item.image1}
                         alt={item.title}
-                        className={`subcard__image ${item.id === 4 || item.id === 3 ? 'tall-image' : ''}`}
+                        className={`subcard__image ${item.id === 4 || item.id === 3 || item.id === 7 ? 'tall-image' : ''}`}
                       />
                       <h3 className="subcard__title">{item.title}</h3>
                       <p className="subcard__description">{item.excerpt}</p>
