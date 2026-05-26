@@ -20,7 +20,7 @@ const SERVICES = {
     description:
       'Edición de audio para mejorar la calidad y la claridad de tus grabaciones. Nuestro servicio de edición de audio se encarga de eliminar ruidos no deseados, ajustar niveles y mejorar la calidad general de tu audio.',
     image:
-      'https://ik.imagekit.io/novelisk/Rec-On/Rec-On%20(12%20of%2026).jpg?updatedAt=1778612559658&tr=w-1200,q-75,f-webp',
+      'https://ik.imagekit.io/novelisk/Rec-On/track_mixing2.jpg?tr=w-1200,q-75,f-webp',
   },
   mixing: {
     title: 'Track Mixing',
@@ -28,7 +28,7 @@ const SERVICES = {
       'Mezcla de pistas para lograr un sonido equilibrado y profesional. Nos aseguramos de que cada elemento de tu música se mezcle perfectamente para crear una experiencia auditiva excepcional.',
     image:
       // 'https://ik.imagekit.io/novelisk/Rec-On/track_mixing.jpg?tr=w-1200,q-75,f-webp',
-      'https://ik.imagekit.io/novelisk/Rec-On/track_mixing2.jpg?tr=w-1200,q-75,f-webp',
+      'https://ik.imagekit.io/novelisk/Rec-On/Rec-On%20(12%20of%2026).jpg?updatedAt=1778612559658&tr=w-1200,q-75,f-webp',
   },
   recording: {
     title: 'Track Recording',
