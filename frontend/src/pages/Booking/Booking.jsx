@@ -1,6 +1,32 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
+
+const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
 export const Booking = () => {
+  const formRef = useRef(null);
+  const [status, setStatus] = useState('idle'); // 'idle', 'loading', 'success', 'error'
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setStatus('loading');
+
+    emailjs
+      .sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, PUBLIC_KEY)
+      .then(() => {
+        setStatus('success');
+        formRef.current.reset();
+        setTimeout(() => {
+          setStatus('idle');
+        }, 5000);
+      })
+      .catch(() => {
+        setStatus('error');
+      });
+  };
+
   return (
     <section className="booking">
       <h1 className="booking__title">
@@ -22,24 +48,27 @@ export const Booking = () => {
 
             <div className="booking__contact-line">
               <span className="booking__contact-label">Teléfono:</span>
-              <span className="booking__contact-value">+52 234 567 8901</span>
+              <span className="booking__contact-value">+52 55 5156 3874</span>
             </div>
 
             <div className="booking__contact-line">
               <span className="booking__contact-label booking__contact-value--mail">
                 Correo:
               </span>
-              <span className="booking__contact-value ">info@company.com</span>
+              <span className="booking__contact-value ">
+                reconstudiomx@gmail.com
+              </span>
             </div>
           </div>
         </aside>
 
-        <form className="booking-form">
+        <form className="booking-form" ref={formRef} onSubmit={handleSubmit}>
           <div className="booking-form__container">
             <label className="booking-form__label">
               Nombre completo<span>*</span>
               <input
                 type="text"
+                name="name"
                 className="booking-form__input"
                 placeholder="Ingresa tu nombre completo"
                 required
@@ -50,6 +79,7 @@ export const Booking = () => {
               Número de contacto<span>*</span>
               <input
                 type="tel"
+                name="phone"
                 className="booking-form__input"
                 placeholder="Ingresa tu número telefónico"
                 required
@@ -62,6 +92,7 @@ export const Booking = () => {
               Elegir fecha<span>*</span>
               <input
                 type="date"
+                name="date"
                 className="booking-form__input booking-form__input--datetime"
                 placeholder="Fecha y hora para tu visita"
                 required
@@ -71,6 +102,7 @@ export const Booking = () => {
             <label className="booking-form__label">
               Tiempo a agendar<span>*</span>
               <select
+                name="duration"
                 className="booking-form__input booking-form__input--select"
                 required
               >
@@ -88,6 +120,7 @@ export const Booking = () => {
           <label className="booking-form__label">
             Servicio a agendar<span>*</span>
             <select
+              name="service"
               className="booking-form__input booking-form__input--select service"
               required
             >
@@ -105,14 +138,42 @@ export const Booking = () => {
             Comentarios adicionales
             <textarea
               className="booking-form__input booking-form__input--textarea comment"
+              name="message"
               rows="4"
               placeholder="¿Tienes alguna solicitud especial?"
             ></textarea>
           </label>
 
-          <button className="booking-form__button" type="submit">
-            Reservar
-          </button>
+          <div className="booking-form__button-container">
+            <button
+              className="booking-form__button"
+              type="submit"
+              disabled={status === 'loading'}
+            >
+              {status === 'loading' ? (
+                <>
+                  <span className="spinner"></span> Enviando...
+                </>
+              ) : (
+                'Reservar'
+              )}
+            </button>
+
+            {/* User Feedback */}
+            <div className="booking-form__feedback-container">
+              {status === 'success' && (
+                <div className="booking-form__feedback booking-form__feedback--success">
+                  ¡Reserva enviada con éxito!
+                </div>
+              )}
+              {status === 'error' && (
+                <div className="booking-form__feedback booking-form__feedback--error">
+                  Hubo un error al enviar la reserva. Por favor, inténtalo de
+                  nuevo.
+                </div>
+              )}
+            </div>
+          </div>
         </form>
       </div>
     </section>

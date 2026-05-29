@@ -216,6 +216,15 @@
   padding-left: 5px;
 }
 
+.booking-form__button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  gap: 20px;
+}
+
 .booking-form__button {
   width: 200px;
   padding: 16px 24px;
@@ -227,10 +236,28 @@
   background-color: #cfab82;
 }
 
+.booking-form__button:disabled {
+  opacity: 0.8;
+  cursor: not-allowed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .booking-form__button:hover {
   transform: translateY(5px) scale(0.95);
   opacity: 0.8;
   cursor: pointer;
+}
+
+.booking-form__feedback-container {
+  margin-top: 18%;
+}
+
+.booking-form__feedback {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
 }
 
 input[type='date'] {
@@ -247,6 +274,23 @@ input[type='date']::-webkit-calendar-picker-indicator {
 
 input[type='date']::-webkit-datetime-edit {
   padding-left: 10px;
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: spin 1s ease-in-out infinite;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @media (max-width: 480px) {
@@ -312,6 +356,10 @@ input[type='date']::-webkit-datetime-edit {
     box-sizing: border-box;
   }
 
+  .booking-form__feedback-container {
+    margin-top: 10%;
+  }
+
   .booking-form__button {
     width: 100%;
     margin-top: 24px;
@@ -349,6 +397,14 @@ input[type='date']::-webkit-datetime-edit {
   .booking-form__input.service,
   .booking-form__input.comment {
     width: 100%;
+  }
+
+  .booking-form__button-container {
+    margin-top: 70px;
+  }
+
+  .booking-form__feedback-container {
+    margin-top: 5%;
   }
 
   .booking-form__button {
@@ -444,6 +500,10 @@ input[type='date']::-webkit-datetime-edit {
     min-height: 140px;
   }
 
+  .booking-form__feedback-container {
+    margin-top: 5%;
+  }
+
   .booking-form__button {
     margin-top: 28px;
     align-self: flex-start;
@@ -460,6 +520,10 @@ input[type='date']::-webkit-datetime-edit {
   .booking-form {
     width: 100%;
     max-width: 860px;
+  }
+
+  .booking-form__feedback-container {
+    margin-top: 5%;
   }
 }
 
