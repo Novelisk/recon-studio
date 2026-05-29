@@ -6,9 +6,9 @@ export const Terms = () => {
       <div className="terms-header">
         <h1 className="terms-header__title">TÉRMINOS Y CONDICIONES.</h1>
         <div className="terms-header__container">
-          <p className="terms-header__subtitle">Rec-On Studio</p>
+          <p className="terms-header__subtitle">REC-ON Studio</p>
           <p className="terms-header__subtitle">
-            Úlima actualización: Abril 2026.
+            Úlima actualización: Mayo 2026.
           </p>
         </div>
       </div>
@@ -24,7 +24,7 @@ export const Terms = () => {
       <div className="terms-content" id="2">
         <h2 className="terms-content__title">2. Servicios ofrecidos.</h2>
         <p className="terms-content__paragraph">
-          Rec-On Studio ofrece los siguientes servicios:
+          REC-ON Studio ofrece los siguientes servicios:
         </p>
         <ul className="terms-content__list">
           <li className="terms-content__list-item">Ensayo (sala de ensayo).</li>
@@ -49,7 +49,7 @@ export const Terms = () => {
             razonable.
           </li>
           <li className="terms-content__list-item">
-            Rec-On Studio se reserva el derecho de aplicar cargos o
+            REC-ON Studio se reserva el derecho de aplicar cargos o
             restricciones en caso de cancelaciones frecuentes o sin aviso.
           </li>
         </ul>
@@ -76,7 +76,7 @@ export const Terms = () => {
             cliente.
           </li>
           <li className="terms-content__list-item">
-            Rec-On Studio no se responsabiliza por la pérdida de archivos una
+            REC-ON Studio no se responsabiliza por la pérdida de archivos una
             vez entregados, por lo que se recomienda al cliente realizar
             respaldos.
           </li>
@@ -91,7 +91,7 @@ export const Terms = () => {
             salvo acuerdo distinto.
           </li>
           <li className="terms-content__list-item">
-            Rec-On Studio no reclama propiedad sobre el contenido producido.
+            REC-ON Studio no reclama propiedad sobre el contenido producido.
           </li>
         </ul>
       </div>
@@ -99,7 +99,7 @@ export const Terms = () => {
       <div className="terms-content" id="7">
         <h2 className="terms-content__title">7. Uso de material.</h2>
         <p className="terms-content__paragraph">
-          Rec-On Studio podrá utilizar fragmentos del material grabado, mezclado
+          REC-ON Studio podrá utilizar fragmentos del material grabado, mezclado
           o producido con fines promocionales (portafolio, redes sociales,
           etc.), salvo que el cliente solicite lo contrario de manera expresa.
         </p>
@@ -108,7 +108,7 @@ export const Terms = () => {
       <div className="terms-content" id="8">
         <h2 className="terms-content__title">8. Responsabilidad.</h2>
         <p className="terms-content__paragraph">
-          Rec-On Studio no se hace responsable por:
+          REC-ON Studio no se hace responsable por:
         </p>
         <ul className="terms-content__list">
           <li className="terms-content__list-item">
@@ -126,7 +126,7 @@ export const Terms = () => {
       <div className="terms-content" id="9">
         <h2 className="terms-content__title">9. Modificaciones</h2>
         <p className="terms-content__paragraph">
-          Rec-On Studio se reserva el derecho de modificar estos términos en
+          REC-ON Studio se reserva el derecho de modificar estos términos en
           cualquier momento. Las modificaciones entrarán en vigor al ser
           publicadas.
         </p>

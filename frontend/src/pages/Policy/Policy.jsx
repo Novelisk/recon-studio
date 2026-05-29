@@ -6,9 +6,9 @@ export const Policy = () => {
       <div className="policy-header">
         <h1 className="policy-header__title">POLÍTICA DE PRIVACIDAD.</h1>
         <div className="policy-header__container">
-          <p className="policy-header__subtitle">Rec-On Studio</p>
+          <p className="policy-header__subtitle">REC-ON Studio</p>
           <p className="policy-header__subtitle">
-            Úlima actualización: Abril 2026.
+            Úlima actualización: Mayo 2026.
           </p>
         </div>
       </div>
@@ -18,7 +18,7 @@ export const Policy = () => {
           1. Responsable del manejo de datos.
         </h2>
         <p className="policy-content__paragraph">
-          Rec-On Studio, con domicilio en Ciudad de México, México, y
+          REC-ON Studio, con domicilio en Ciudad de México, México, y
           representado por el Ing. Jorge Trejo Gandarias, es responsable del
           tratamiento de los datos personales recabados a través de este sitio
           web.
@@ -26,7 +26,7 @@ export const Policy = () => {
         <p className="policy-content__paragraph policy-content__paragraph--bottom">
           Para cualquier duda o solicitud relacionada con la privacidad de tus
           datos, puedes contactarnos en:
-          <span> jorge_t.g@hotmail.com</span>
+          <span> reconstudiomx@gmail.com</span>
         </p>
       </div>
 
@@ -66,7 +66,7 @@ export const Policy = () => {
           </li>
         </ul>
         <p className="policy-content__paragraph policy-content__paragraph--bottom">
-          Rec-On Studio no utiliza los datos para fines publicitarios ni los
+          REC-ON Studio no utiliza los datos para fines publicitarios ni los
           comparte con terceros.
         </p>
       </div>
@@ -89,7 +89,7 @@ export const Policy = () => {
       <div className="policy-content" id="5">
         <h2 className="policy-content__title">5. Protección de datos.</h2>
         <p className="policy-content__paragraph">
-          Rec-On Studio se compromete a proteger la información personal
+          REC-ON Studio se compromete a proteger la información personal
           proporcionada por los usuarios y a utilizarla de manera responsable,
           evitando accesos no autorizados.
         </p>
@@ -118,7 +118,7 @@ export const Policy = () => {
       <div className="policy-content" id="7">
         <h2 className="policy-content__title">7. Cambios en la política.</h2>
         <p className="policy-content__paragraph">
-          Rec-On Studio se reserva el derecho de modificar esta política de
+          REC-ON Studio se reserva el derecho de modificar esta política de
           privacidad en cualquier momento. Cualquier cambio será publicado en
           esta misma página.
         </p>

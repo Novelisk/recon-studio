@@ -33,9 +33,13 @@ export const Header = () => {
 
   return (
     <header className="header" ref={headerRef}>
-    <Link to='/home'>
-      <img className="header__logo" src={headerLogo} alt="Rec-On Studio Logo" />
-    </Link>
+      <Link to="/home">
+        <img
+          className="header__logo"
+          src={headerLogo}
+          alt="Rec-On Studio Logo"
+        />
+      </Link>
       <button
         type="button"
         className="header__menu-toggle"
@@ -52,7 +56,10 @@ export const Header = () => {
         id="main-navigation"
         className={`header__nav ${isMobileMenuOpen ? 'header__nav--open' : ''}`}
       >
-        <ul className="header__nav-list_left" onClick={() => setIsMobileMenuOpen(false)}>
+        <ul
+          className="header__nav-list_left"
+          onClick={() => setIsMobileMenuOpen(false)}
+        >
           <li className="header__nav-list_left-item">
             <NavLink
               to="/home"
@@ -141,14 +148,14 @@ export const Header = () => {
               <div className="header__contact-container">
                 <h5 className="header__contact-container--title">Teléfono:</h5>
                 <p className="header__contact-container--text">
-                  +52 00 00 00 00
+                  +52 55 5156 3874
                 </p>
               </div>
 
               <div className="header__contact-container">
                 <h5 className="header__contact-container--title">Correo:</h5>
                 <p className="header__contact-container--text">
-                  jorge_t.g@hotmail.com
+                  reconstudiomx@gmail.com
                 </p>
               </div>
             </div>

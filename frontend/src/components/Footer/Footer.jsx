@@ -29,14 +29,14 @@ export const Footer = () => {
               alt="Classic phone icon"
               className="footer__contact_icon"
             />
-            <p className="footer__contact_phone-number">(52) 555 156 3874</p>
+            <p className="footer__contact_phone-number">+52 55 5156 3874</p>
 
             <img
               src={emailIcon}
               alt="E-mail icon"
               className="footer__contact_icon footer__contact_icon_email"
             />
-            <p className="footer__contact_email">jorge_t.g@hotmail.com</p>
+            <p className="footer__contact_email">reconstudiomx@gmail.com</p>
           </div>
 
           <div className="footer__legal">
@@ -85,7 +85,7 @@ export const Footer = () => {
         </div>
 
         <div className="footer__copyright">
-          Copyright &copy; 2026 REC ON Studio. Todos los derechos resevados.
+          Copyright &copy; 2026 REC-ON Studio. Todos los derechos resevados.
         </div>
 
         <div className="footer__author">

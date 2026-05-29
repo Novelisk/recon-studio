@@ -107,12 +107,12 @@ export const Booking = () => {
                 required
               >
                 <option value="">Selecciona duración</option>
-                <option value="60">1 hora</option>
-                <option value="120">2 horas</option>
-                <option value="180">3 horas</option>
-                <option value="240">4 horas</option>
-                <option value="360">6 horas</option>
-                <option value="480">8 horas</option>
+                <option value="1">1 hora</option>
+                <option value="2">2 horas</option>
+                <option value="3">3 horas</option>
+                <option value="4">4 horas</option>
+                <option value="6">6 horas</option>
+                <option value="8">8 horas</option>
               </select>
             </label>
           </div>
