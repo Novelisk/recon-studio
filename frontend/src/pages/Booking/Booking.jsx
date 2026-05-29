@@ -18,9 +18,7 @@ export const Booking = () => {
       .then(() => {
         setStatus('success');
         formRef.current.reset();
-        setTimeout(() => {
-          setStatus('idle');
-        }, 5000);
+        setTimeout(() => setStatus('idle'), 5000);
       })
       .catch(() => {
         setStatus('error');
