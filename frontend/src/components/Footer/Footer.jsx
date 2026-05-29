@@ -85,7 +85,7 @@ export const Footer = () => {
         </div>
 
         <div className="footer__copyright">
-          Copyright &copy; 2025 Rec-On Studio. Todos los derechos resevados.
+          Copyright &copy; 2026 REC ON Studio. Todos los derechos resevados.
         </div>
 
         <div className="footer__author">
