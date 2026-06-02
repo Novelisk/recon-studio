@@ -27,7 +27,6 @@ const SERVICES = {
     description:
       'Mezcla de pistas para lograr un sonido equilibrado y profesional. Nos aseguramos de que cada elemento de tu música se mezcle perfectamente para crear una experiencia auditiva excepcional.',
     image:
-      // 'https://ik.imagekit.io/novelisk/Rec-On/track_mixing.jpg?tr=w-1200,q-75,f-webp',
       'https://ik.imagekit.io/novelisk/Rec-On/Rec-On%20(12%20of%2026).jpg?updatedAt=1778612559658&tr=w-1200,q-75,f-webp',
   },
   recording: {
@@ -41,7 +40,8 @@ const SERVICES = {
     title: 'Sala de ensayos',
     description:
       'Contamos con una sala de ensayos completamente equipada para que puedas practicar y preparar tus presentaciones en vivo. Nuestra sala de ensayos ofrece un ambiente cómodo y profesional para que puedas concentrarte en tu música y mejorar tus habilidades.',
-    image: 'https://cdn.mos.cms.futurecdn.net/sLJnsjvf6zACPou8FEb4i5.jpg',
+    image:
+      'https://ik.imagekit.io/novelisk/Rec-On/ensayo1.jpg?tr=w-1200,q-75,f-webp',
   },
 };
 
