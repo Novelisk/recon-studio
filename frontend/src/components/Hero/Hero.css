@@ -23,7 +23,7 @@
   }
 
   .hero__title {
-    font-size: 34px;
+    font-size: 32px;
     margin: 120px 16px 80px;
     text-align: center;
   }
@@ -56,9 +56,9 @@
     height: 100vh;
   }
   .hero__title {
-    font-size: 80px;
-    margin-left: 12vw;
-    margin-top: 20vh;
+    font-size: 65px;
+    margin-left: 4vw;
+    margin-top: 50vh;
   }
 }
 
