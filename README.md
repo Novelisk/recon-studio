@@ -8,6 +8,7 @@ Responsive website for **REC-ON Studio**, a professional music studio. Built wit
 ![SERVICES](https://ik.imagekit.io/novelisk/noveliskdev%20Personal%20Web%20Page/reconsc4.png)
 ![BOOKING](https://ik.imagekit.io/novelisk/noveliskdev%20Personal%20Web%20Page/reconsc5.png)
 ![HOME](https://ik.imagekit.io/novelisk/noveliskdev%20Personal%20Web%20Page/reconsc6.png)
+![404](https://ik.imagekit.io/novelisk/noveliskdev%20Personal%20Web%20Page/reconsc404.png)
 
 ## Tech Stack:
 - **React 19** + **Vite 7**
