@@ -12,7 +12,7 @@ Responsive website for **REC-ON Studio**, a professional music studio. Built wit
 ![HOME](https://ik.imagekit.io/novelisk/noveliskdev%20Personal%20Web%20Page/reconsc6.png)
 ![404](https://ik.imagekit.io/novelisk/noveliskdev%20Personal%20Web%20Page/reconsc404.png)
 
-**Live at:** https://www.reconstudio.com.mx
+**Live at:** [reconstudio.com.mx](https://www.reconstudio.com.mx)
 
 ## Tech Stack:
 
