@@ -1,7 +1,9 @@
 # REC-ON Studio
+
 Responsive website for **REC-ON Studio**, a professional music studio. Built with **React** + **Vite**
 
 # Screen Shots
+
 ![HOME](https://ik.imagekit.io/novelisk/noveliskdev%20Personal%20Web%20Page/reconsc1.png)
 ![HOME](https://ik.imagekit.io/novelisk/noveliskdev%20Personal%20Web%20Page/reconsc2.png)
 ![ABOUT](https://ik.imagekit.io/novelisk/noveliskdev%20Personal%20Web%20Page/reconsc3.png)
@@ -10,7 +12,10 @@ Responsive website for **REC-ON Studio**, a professional music studio. Built wit
 ![HOME](https://ik.imagekit.io/novelisk/noveliskdev%20Personal%20Web%20Page/reconsc6.png)
 ![404](https://ik.imagekit.io/novelisk/noveliskdev%20Personal%20Web%20Page/reconsc404.png)
 
+**Live at:** https://www.reconstudio.com.mx
+
 ## Tech Stack:
+
 - **React 19** + **Vite 7**
 - **React Router DOM** — multi-page navigation
 - **EmailJS** — contact form without backend
@@ -19,6 +24,7 @@ Responsive website for **REC-ON Studio**, a professional music studio. Built wit
 - **Pure CSS** — no frameworks
 
 ## Features
+
 - **Multi-page navigation** — Home, About, Services, Booking, Policy, Terms
 - **Services Modal** — interactive hover-based tabs that dynamically update a
   full-background image and service description (Voice Recording, Track Mastering,
